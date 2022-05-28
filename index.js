@@ -63,9 +63,11 @@ async function getDownloadUrl(modId, fileId) {
 /**
  * 다운받은 모드의 lang파일을 추출하는 함수
  * @param {arraybuffer} buffer 추출 할 파일의 arraybuffer
+ * @param {string} modLoader 모드로더 종류 ex:forge, fabric
+ * @param {string} modVersion 모드 버전 (마이너 버전까지만 입력)
  * @returns 성공여부 반환
  */
-function extract(buffer) {
+function extract(buffer, modLoader, modVersion) {
   try {
     const zip = new AdmZip(buffer);
     const zipEntries = zip.getEntries();
@@ -87,7 +89,10 @@ function extract(buffer) {
       }
     }
 
-    const assetsPath = path.join(__dirname, projectDir);
+    const assetsPath = path.join(
+      __dirname,
+      `${projectDir}/${modLoader}-${modVersion}`
+    );
 
     if (modId) {
       zip.extractEntryTo(
@@ -272,21 +277,21 @@ function updateModIndex(index, fileName) {
       }
 
       if (!isEmpty(modIndex)) {
-        const isExist = await compareFileId(
+        const isLatest = await compareFileId(
           modIndex,
           slug,
           modLoader,
           modVersion,
           fileId
         );
-        if (isExist) {
+        if (isLatest) {
           return;
         }
       }
 
       const downloadUrl = await getDownloadUrl(modId, fileId);
       const downloadedMod = await download(downloadUrl);
-      const modExtract = extract(downloadedMod);
+      const modExtract = extract(downloadedMod, modLoader, modVersion);
       if (modExtract) {
         index = { ...index, ...info };
       } else {
