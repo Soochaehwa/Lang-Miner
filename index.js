@@ -2,6 +2,7 @@ import fs from "fs";
 import AdmZip from "adm-zip";
 import path from "path";
 import Axios from "axios";
+import axiosRetry from "axios-retry";
 import log from "./utils/logger.js";
 import { isEmpty } from "./utils/utils.js";
 import chalk from "chalk";
@@ -15,6 +16,17 @@ const projectDir = "Korean-Resource-Pack";
 const headers = {
   "x-api-key": config.API_KEY,
 };
+
+axiosRetry(Axios, {
+  retries: 3,
+  retryDelay: (retryCount) => {
+    log.warn(`재시도 횟수: ${retryCount}`);
+    return retryCount * 1000;
+  },
+  retryCondition: (error) => {
+    return error.response.status === 504;
+  },
+});
 
 /**
  * URL을 받아 파일을 다운로드 하는 함수
@@ -39,15 +51,15 @@ async function download(url) {
 }
 
 /**
- * 모드 ID와 파일 ID를 받아 다운로드 URL을 반환하는 함수
- * @param {string} modId 모드 Id
+ * 프로젝트 ID와 파일 ID를 받아 다운로드 URL을 반환하는 함수
+ * @param {number} projectId 프로젝트 Id
  * @param {string} fileId 파일 Id
  * @returns 모드를 다운로드 할 수 있는 URL 반환
  */
-async function getDownloadUrl(modId, fileId) {
+async function getDownloadUrl(projectId, fileId) {
   try {
     const response = await Axios.get(
-      `${API}/mods/${modId}/files/${fileId}/download-url`,
+      `${API}/mods/${projectId}/files/${fileId}/download-url`,
       {
         headers,
       }
@@ -111,13 +123,13 @@ function extract(buffer, modLoader, modVersion) {
 }
 
 /**
- * 모드 ID를 받아 모드의 정보를 반환하는 함수
+ * 프로젝트 ID를 받아 모드의 정보를 반환하는 함수
  * @param {string} modLoader 모드로더 종류 ex:forge, fabric
- * @param {string} modId 모드Id
+ * @param {number} projectId 프로젝트Id
  * @param {string} modVersion 모드 버전 (마이너 버전까지만 입력)
  * @returns 모드 정보 반환
  */
-async function getModInfo(modLoader, modId, modVersion) {
+async function getModInfo(modLoader, projectId, modVersion) {
   try {
     modLoader = modLoader.toLowerCase();
     if (modLoader === "fabric") {
@@ -130,7 +142,7 @@ async function getModInfo(modLoader, modId, modVersion) {
 
     const version = modVersion;
 
-    const response = await Axios.get(`${API}/mods/${modId}`, {
+    const response = await Axios.get(`${API}/mods/${projectId}`, {
       headers,
     });
     const modInfo = response.data.data;
@@ -243,13 +255,29 @@ function updateModIndex(index, fileName) {
   });
 }
 
-(async () => {
-  const manifest = fs.readFileSync("./manifest.json", "utf8");
+async function main(modLoader = "fabric", modVersion = "1.18", target) {
+  const regex =
+    /(http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?.json/;
 
-  const manifestJson = JSON.parse(manifest);
-  const files = manifestJson.files;
-  const modLoader = "fabric";
-  const modVersion = "1.18";
+  let projectIds = [];
+
+  if (regex.test(target)) {
+    const response = await Axios.get(target);
+    const files = response.data.files;
+    files.forEach((file) => {
+      projectIds = [...projectIds, file.projectID];
+    });
+  } else if (!isNaN(target)) {
+    projectIds = target;
+  } else {
+    return log.error(`잘못된 타겟 인수입니다.`);
+  }
+
+  log.info(`모드 ${projectIds.length}개 추출을 시작합니다.`);
+
+  // const manifest = fs.readFileSync("./manifest.json", "utf8");
+  // const manifestJson = JSON.parse(manifest);
+  // const files = manifestJson.files;
 
   let index = {};
 
@@ -259,15 +287,15 @@ function updateModIndex(index, fileName) {
   noLangIndex ? null : (noLangIndex = []);
 
   await Promise.all(
-    files.map(async (file) => {
-      const info = await getModInfo(modLoader, file.projectID, modVersion);
+    projectIds.map(async (projectId) => {
+      const info = await getModInfo(modLoader, projectId, modVersion);
 
       if (!info) {
         return;
       }
 
       const slug = Object.keys(info)[0];
-      const modId = info[slug].id;
+      // const projectId = info[slug].id;
       const fileId = Object.values(info[slug][modLoader]);
 
       if (noLangIndex.includes(slug)) {
@@ -289,13 +317,14 @@ function updateModIndex(index, fileName) {
         }
       }
 
-      const downloadUrl = await getDownloadUrl(modId, fileId);
+      const downloadUrl = await getDownloadUrl(projectId, fileId);
       const downloadedMod = await download(downloadUrl);
       const modExtract = extract(downloadedMod, modLoader, modVersion);
       if (modExtract) {
         index = { ...index, ...info };
       } else {
         noLangIndex = [...noLangIndex, slug];
+        log.info(`${chalk.hex("#FFEF82")(slug)} 언어 파일이 없는 모드입니다.`);
       }
     })
   );
@@ -304,13 +333,10 @@ function updateModIndex(index, fileName) {
 
   modIndex = merge(modIndex, index);
   !isEmpty(index) ? updateModIndex(modIndex, "ModIndex") : null;
-})();
+}
 
 /*
 TODO:
-- 모드 인덱스랑 비교해서 버전이 바뀐 모드만 다운로드
-- manifest.json 파일을 주소로 받아서 분석
-- 모드팩 말고 단일 모드도 프로젝트 ID만 적으면 추가되게 하기
 - 패츌리 모드 언어 추출
 - 함수 모듈로 나누기
 */
