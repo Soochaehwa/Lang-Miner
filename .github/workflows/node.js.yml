@@ -56,3 +56,8 @@ jobs:
         API_KEY: ${{ secrets.API_KEY }}
     - run: npm ci
     - run: node index.js ${{ github.event.inputs.loader }} ${{ github.event.inputs.version }} ${{ github.event.inputs.target }}
+    
+    - name: Add & Commit
+      uses: EndBug/add-and-commit@v9.0.0
+      with:
+        cwd: './Korean-Resource-Pack/'
