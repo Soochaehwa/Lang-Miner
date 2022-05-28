@@ -1,0 +1,2865 @@
+{
+  "hwyla-addon-horse-info": {
+    "name": "Hwyla Addon Horse Info",
+    "id": 390027,
+    "fabric": {
+      "1.18.1": 3568159
+    }
+  },
+  "simple-void-world": {
+    "name": "Simple Void World",
+    "id": 254466,
+    "fabric": {
+      "1.18.2": 3672581
+    }
+  },
+  "rightclickharvest-fabric": {
+    "name": "RightClickHarvest",
+    "id": 452834,
+    "fabric": {
+      "1.18.1": 3802332
+    }
+  },
+  "raised": {
+    "name": "Raised",
+    "id": 570368,
+    "fabric": {
+      "1.18.1": 3796917
+    }
+  },
+  "dynamic-fps": {
+    "name": "Dynamic FPS",
+    "id": 335493,
+    "fabric": {
+      "1.18.1": 3606973
+    }
+  },
+  "villager-hats-mod": {
+    "name": "Villager Hats Mod",
+    "id": 501456,
+    "fabric": {
+      "1.18.1": 3797131
+    }
+  },
+  "companion-fabric": {
+    "name": "Companion 🐕 (Fabric)",
+    "id": 560280,
+    "fabric": {
+      "1.18.2": 3717806
+    }
+  },
+  "enchantment-descriptions": {
+    "name": "Enchantment Descriptions",
+    "id": 250419,
+    "fabric": {
+      "1.18.2": 3754811
+    }
+  },
+  "quests-additions-fabric": {
+    "name": "Quests Additions (Fabric)",
+    "id": 580136,
+    "fabric": {
+      "1.18.2": 3785027
+    }
+  },
+  "better-compatibility-checker": {
+    "name": "Better Compatibility Checker",
+    "id": 551894,
+    "fabric": {
+      "1.18.1": 3679841
+    }
+  },
+  "can-i-mine-this-block": {
+    "name": "cAn i MiNe thIS bLOCk?",
+    "id": 400929,
+    "fabric": {
+      "1.18.2": 3680371
+    }
+  },
+  "emerald-geodes": {
+    "name": "More Geodes",
+    "id": 437712,
+    "fabric": {
+      "1.18.2": 3788979
+    }
+  },
+  "ftb-ultimine-fabric": {
+    "name": "FTB Ultimine (Fabric)",
+    "id": 448231,
+    "fabric": {
+      "1.18.2": 3725671
+    }
+  },
+  "slotlock": {
+    "name": "SlotLock",
+    "id": 408366,
+    "fabric": {
+      "1.18": 3541401
+    }
+  },
+  "break-progress": {
+    "name": "Break Progress",
+    "id": 416406,
+    "fabric": {
+      "1.18.1": 3133167
+    }
+  },
+  "trinket-of-undying-fabric": {
+    "name": "Trinket of Undying (Fabric)",
+    "id": 395547,
+    "fabric": {
+      "1.18.1": 3553494
+    }
+  },
+  "onastick": {
+    "name": "⚒️ On A Stick [FABRIC]",
+    "id": 550544,
+    "fabric": {
+      "1.18.1": 3590716
+    }
+  },
+  "client-tweaks-fabric": {
+    "name": "Client Tweaks (Fabric Edition)",
+    "id": 547692,
+    "fabric": {
+      "1.18.1": 3666466
+    }
+  },
+  "infusion-table": {
+    "name": "Infusion Table",
+    "id": 531783,
+    "fabric": {
+      "1.18": 3566189
+    }
+  },
+  "controlling": {
+    "name": "Controlling",
+    "id": 250398,
+    "fabric": {
+      "1.18.2": 3758405
+    }
+  },
+  "straw-dummy": {
+    "name": "Straw Dummy",
+    "id": 393392,
+    "fabric": {
+      "1.18.2": 3671243
+    }
+  },
+  "croptosis": {
+    "name": "Croptosis",
+    "id": 437552,
+    "fabric": {
+      "1.18.2": 3686895
+    }
+  },
+  "improved-stations": {
+    "name": "Improved Stations (Fabric)",
+    "id": 355914,
+    "fabric": {
+      "1.18.2": 3734902
+    }
+  },
+  "cherished-worlds-fabric": {
+    "name": "Cherished Worlds (Fabric)",
+    "id": 398502,
+    "fabric": {
+      "1.18.1": 3544922
+    }
+  },
+  "wither-totem": {
+    "name": "Wither Skeleton Totem",
+    "id": 349850,
+    "fabric": {
+      "1.18.2": 3668089
+    }
+  },
+  "magical-forest": {
+    "name": "Magical Forest",
+    "id": 383666,
+    "fabric": {
+      "1.18.2": 3732062
+    }
+  },
+  "light-overlay": {
+    "name": "Light Overlay (Rift/Forge/Fabric)",
+    "id": 325492,
+    "fabric": {
+      "1.18.2": 3668243
+    }
+  },
+  "golden-hoppers": {
+    "name": "Golden Hoppers",
+    "id": 442268,
+    "fabric": {
+      "1.18.2": 3753605
+    }
+  },
+  "item-filters-fabric": {
+    "name": "Item Filters (Old)",
+    "id": 438500,
+    "fabric": {
+      "1.18.2": 3725922
+    }
+  },
+  "crawl": {
+    "name": "Crawl (Fabric)",
+    "id": 314579,
+    "fabric": {
+      "1.18.2": 3755798
+    }
+  },
+  "crafting-tweaks-fabric": {
+    "name": "Crafting Tweaks (Fabric Edition)",
+    "id": 502516,
+    "fabric": {
+      "1.18.1": 3545612
+    }
+  },
+  "xp-obelisk": {
+    "name": "XP Obelisk",
+    "id": 510262,
+    "fabric": {
+      "1.18.2": 3789617
+    }
+  },
+  "dragonloot": {
+    "name": "DragonLoot",
+    "id": 424480,
+    "fabric": {
+      "1.18.2": 3683636
+    }
+  },
+  "capybara-fabric": {
+    "name": "Capybara [Fabric]",
+    "id": 549031,
+    "fabric": {
+      "1.18.1": 3771670
+    }
+  },
+  "basic-aiots": {
+    "name": "Basic AIOTs",
+    "id": 476080,
+    "fabric": {
+      "1.18.2": 3667500
+    }
+  },
+  "roughly-enough-resources": {
+    "name": "Roughly Enough Resources",
+    "id": 325625,
+    "fabric": {
+      "1.18.2": 3736226
+    }
+  },
+  "nears": {
+    "name": "Nears [Fabric]",
+    "id": 482621,
+    "fabric": {
+      "1.18.2": 3758398
+    }
+  },
+  "tool-stats": {
+    "name": "Tool Stats",
+    "id": 377109,
+    "fabric": {
+      "1.18.2": 3801127
+    }
+  },
+  "grims-transportables": {
+    "name": "Grim's Transportables",
+    "id": 473508,
+    "fabric": {
+      "1.18.2": 3787169
+    }
+  },
+  "findme": {
+    "name": "FindMe",
+    "id": 291936,
+    "fabric": {
+      "1.18.2": 3732921
+    }
+  },
+  "simple-teleporters-fabric": {
+    "name": "Simple Teleporters (Fabric)",
+    "id": 334011,
+    "fabric": {
+      "1.18": 3540346
+    }
+  },
+  "trap-expansion-fabric": {
+    "name": "Trap Expansion  (Fabric)",
+    "id": 334018,
+    "fabric": {
+      "1.18.1": 3540177
+    }
+  },
+  "vanilla-excavators": {
+    "name": "Vanilla Excavators",
+    "id": 341772,
+    "fabric": {
+      "1.18.2": 3740910
+    }
+  },
+  "default-options-fabric": {
+    "name": "Default Options (Fabric Edition)",
+    "id": 547694,
+    "fabric": {
+      "1.18.1": 3630248
+    }
+  },
+  "ellemes-container-library": {
+    "name": "Ellemes' Container Library",
+    "id": 530668,
+    "fabric": {
+      "1.18.2": 3798979
+    }
+  },
+  "creeper-overhaul": {
+    "name": "Creeper Overhaul",
+    "id": 561625,
+    "fabric": {
+      "1.18.2": 3787154
+    }
+  },
+  "guard-villagers-fabric": {
+    "name": "Guard Villagers (Fabric)",
+    "id": 571503,
+    "fabric": {
+      "1.18.2": 3779559
+    }
+  },
+  "dark-paintings": {
+    "name": "Dark Paintings",
+    "id": 377281,
+    "fabric": {
+      "1.18.2": 3796182
+    }
+  },
+  "bisecthosting-server-integration-menu-fabric": {
+    "name": "BisectHosting Server Integration Menu [FABRIC]",
+    "id": 585548,
+    "fabric": {
+      "1.18.1": 3707430
+    }
+  },
+  "netherportalfix-fabric": {
+    "name": "NetherPortalFix (Fabric Edition)",
+    "id": 547696,
+    "fabric": {
+      "1.18.1": 3549514
+    }
+  },
+  "beaconoverhaul": {
+    "name": "Beacon Overhaul",
+    "id": 430382,
+    "fabric": {
+      "1.18.2": 3683935
+    }
+  },
+  "staff-of-building": {
+    "name": "Staff of Building",
+    "id": 382694,
+    "fabric": {
+      "1.18.1": 3577332
+    }
+  },
+  "youre-in-grave-danger": {
+    "name": "You're in Grave Danger",
+    "id": 544912,
+    "fabric": {
+      "1.18.2": 3807315
+    }
+  },
+  "respawnable-pets": {
+    "name": "Respawnable Pets",
+    "id": 319582,
+    "fabric": {
+      "1.18.2": 3687422
+    }
+  },
+  "ae2things": {
+    "name": "AE2 Things",
+    "id": 563800,
+    "fabric": {
+      "1.18.2": 3796436
+    }
+  },
+  "kleeslabs-fabric": {
+    "name": "KleeSlabs (Fabric Edition)",
+    "id": 547695,
+    "fabric": {
+      "1.18.1": 3549467
+    }
+  },
+  "cammies-wearable-backpacks": {
+    "name": "Cammie's Wearable Backpacks",
+    "id": 443091,
+    "fabric": {
+      "1.18.1": 3661610
+    }
+  },
+  "lovely-snails": {
+    "name": "Lovely Snails",
+    "id": 499425,
+    "fabric": {
+      "1.18.2": 3683627
+    }
+  },
+  "thatched": {
+    "name": "Thatched",
+    "id": 403202,
+    "fabric": {
+      "1.18.2": 3682786
+    }
+  },
+  "lifts": {
+    "name": "Lifts",
+    "id": 451554,
+    "fabric": {
+      "1.18.2": 3770970
+    }
+  },
+  "glassential-fabric": {
+    "name": "Glassential (Fabric)",
+    "id": 320778,
+    "fabric": {
+      "1.18": 3532014
+    }
+  },
+  "croptopias-chocolaterie-fabric": {
+    "name": "Croptopia's Chocolaterie [Fabric]",
+    "id": 560262,
+    "fabric": {
+      "1.18.2": 3771647
+    }
+  },
+  "yungs-better-mineshafts-fabric": {
+    "name": "YUNG's Better Mineshafts (Fabric)",
+    "id": 373591,
+    "fabric": {
+      "1.18.2": 3793997
+    }
+  },
+  "animal-feeding-trough": {
+    "name": "Animal Feeding Trough [Fabric | Forge]",
+    "id": 445838,
+    "fabric": {
+      "1.18.2": 3667573
+    }
+  },
+  "trashslot-fabric-edition": {
+    "name": "TrashSlot (Fabric Edition)",
+    "id": 547689,
+    "fabric": {
+      "1.18.1": 3658063
+    }
+  },
+  "incantationem": {
+    "name": "Incantationem",
+    "id": 483166,
+    "fabric": {
+      "1.18.2": 3661225
+    }
+  },
+  "cammies-minecart-tweaks": {
+    "name": "Cammie's Minecart Tweaks",
+    "id": 579937,
+    "fabric": {
+      "1.18.2": 3742119
+    }
+  },
+  "carrier": {
+    "name": "Carrier",
+    "id": 409184,
+    "fabric": {
+      "1.18.2": 3671184
+    }
+  },
+  "natures-compass": {
+    "name": "Nature's Compass",
+    "id": 252848,
+    "fabric": {
+      "1.18.2": 3684915
+    }
+  },
+  "unlimitedperipheralworks": {
+    "name": "UnlimitedPeripheralWorks",
+    "id": 621851,
+    "fabric": {
+      "1.18.2": 3787449
+    }
+  },
+  "auto-config-updated-api": {
+    "name": "Auto Config Updated API",
+    "id": 373261,
+    "fabric": {
+      "1.18.1": 3668220
+    }
+  },
+  "expanded-storage": {
+    "name": "Expanded Storage",
+    "id": 317856,
+    "fabric": {
+      "1.18.2": 3799166
+    }
+  },
+  "deepslatecutting": {
+    "name": "DeepslateCutting",
+    "id": 504899,
+    "fabric": {
+      "1.18.2": 3789579
+    }
+  },
+  "wolves-with-armor": {
+    "name": "Wolves With Armor",
+    "id": 375969,
+    "fabric": {
+      "1.18.1": 3769925
+    }
+  },
+  "trinkets-fabric": {
+    "name": "Trinkets (Fabric)",
+    "id": 341284,
+    "fabric": {
+      "1.18.2": 3786685
+    }
+  },
+  "macaws-bridges": {
+    "name": "Macaw's Bridges",
+    "id": 351725,
+    "fabric": {
+      "1.18.2": 3793698
+    }
+  },
+  "pehkui": {
+    "name": "Pehkui",
+    "id": 319596,
+    "fabric": {
+      "1.18.1": 3808018
+    }
+  },
+  "ftb-teams-fabric": {
+    "name": "FTB Teams (Fabric)",
+    "id": 438497,
+    "fabric": {
+      "1.18.2": 3725500
+    }
+  },
+  "inventory-sorting": {
+    "name": "Inventory Sorting",
+    "id": 325471,
+    "fabric": {
+      "1.18.2": 3669320
+    }
+  },
+  "applied-botanics-addon": {
+    "name": "Applied Botanics Addon",
+    "id": 610632,
+    "fabric": {
+      "1.18.2": 3807435
+    }
+  },
+  "harvest-scythes": {
+    "name": "Harvest Scythes",
+    "id": 412225,
+    "fabric": {
+      "1.18.2": 3684872
+    }
+  },
+  "vanilla-hammers": {
+    "name": "Vanilla Hammers",
+    "id": 317756,
+    "fabric": {
+      "1.18.2": 3783612
+    }
+  },
+  "forge-config-api-port-fabric": {
+    "name": "Forge Config API Port [Fabric]",
+    "id": 547434,
+    "fabric": {
+      "1.18.2": 3671141
+    }
+  },
+  "entity-banners": {
+    "name": "Entity Banners",
+    "id": 470149,
+    "fabric": {
+      "1.18": 3541351
+    }
+  },
+  "deathlog": {
+    "name": "DeathLog",
+    "id": 496150,
+    "fabric": {
+      "1.18.2": 3801919
+    }
+  },
+  "fabric-waystones": {
+    "name": "Fabric Waystones",
+    "id": 410902,
+    "fabric": {
+      "1.18.2": 3800618
+    }
+  },
+  "duckling": {
+    "name": "Duckling",
+    "id": 597248,
+    "fabric": {
+      "1.18.2": 3802194
+    }
+  },
+  "blast": {
+    "name": "BLAST 💣",
+    "id": 349938,
+    "fabric": {
+      "1.18.2": 3793571
+    }
+  },
+  "quick-shulker": {
+    "name": "Quick Shulker",
+    "id": 362669,
+    "fabric": {
+      "1.18.1": 3614231
+    }
+  },
+  "deep-mob-learning-simulacrum": {
+    "name": "Deep Mob Learning: Simulacrum",
+    "id": 508931,
+    "fabric": {
+      "1.18.2": 3785658
+    }
+  },
+  "arcanus": {
+    "name": "Arcanus",
+    "id": 517833,
+    "fabric": {
+      "1.18.2": 3742064
+    }
+  },
+  "wthit": {
+    "name": "WTHIT",
+    "id": 440979,
+    "fabric": {
+      "1.18.2": 3791303
+    }
+  },
+  "bits-and-chisels": {
+    "name": "Bits And Chisels",
+    "id": 420709,
+    "fabric": {
+      "1.18.2": 3772450
+    }
+  },
+  "the-graveyard-biomes-fabric": {
+    "name": "The Graveyard Biomes (FABRIC)",
+    "id": 584511,
+    "fabric": {
+      "1.18.2": 3709779
+    }
+  },
+  "structure-tools": {
+    "name": "St'ructure Tools",
+    "id": 536984,
+    "fabric": {
+      "1.18.2": 3683202
+    }
+  },
+  "health-overlay-fabric": {
+    "name": "Health Overlay (Fabric)",
+    "id": 313219,
+    "fabric": {
+      "1.18.1": 3563686
+    }
+  },
+  "inmis": {
+    "name": "Inmis",
+    "id": 369254,
+    "fabric": {
+      "1.18.2": 3783618
+    }
+  },
+  "auto-workstations-fabric": {
+    "name": "Auto Workstations (Fabric)",
+    "id": 623678,
+    "fabric": {
+      "1.18.2": 3792896
+    }
+  },
+  "mo-colors": {
+    "name": "Mo' Colors",
+    "id": 446767,
+    "fabric": {
+      "1.18.2": 3671252
+    }
+  },
+  "dank-storage-fabric": {
+    "name": "Dank Storage Fabric",
+    "id": 400619,
+    "fabric": {
+      "1.18.2": 3770217
+    }
+  },
+  "applied-energistics-2-wireless-terminals": {
+    "name": "Applied Energistics 2 Wireless Terminals",
+    "id": 459929,
+    "fabric": {
+      "1.18.2": 3793593
+    }
+  },
+  "terrarian-slimes": {
+    "name": "Terrarian Slimes",
+    "id": 465336,
+    "fabric": {
+      "1.18.2": 3712532
+    }
+  },
+  "modmenu": {
+    "name": "Mod Menu",
+    "id": 308702,
+    "fabric": {
+      "1.18.2": 3789482
+    }
+  },
+  "macaws-trapdoors": {
+    "name": "Macaw's Trapdoors",
+    "id": 400933,
+    "fabric": {
+      "1.18.2": 3682902
+    }
+  },
+  "impaled": {
+    "name": "Impaled 🔱",
+    "id": 478843,
+    "fabric": {
+      "1.18.2": 3802476
+    }
+  },
+  "pyrotastic": {
+    "name": "Pyrotastic 🎆",
+    "id": 596990,
+    "fabric": {
+      "1.18.2": 3790890
+    }
+  },
+  "artifacts-fabric": {
+    "name": "Artifacts (Fabric)",
+    "id": 401236,
+    "fabric": {
+      "1.18.2": 3756730
+    }
+  },
+  "dwarf-coal-fabric": {
+    "name": "Dwarf Coal (Fabric)",
+    "id": 309177,
+    "fabric": {
+      "1.18.1": 3595860
+    }
+  },
+  "lootr-fabric": {
+    "name": "Lootr (Fabric)",
+    "id": 615106,
+    "fabric": {
+      "1.18.2": 3800883
+    }
+  },
+  "reborncore": {
+    "name": "Reborn Core",
+    "id": 237903,
+    "fabric": {
+      "1.18.2": 3798506
+    }
+  },
+  "grizzly-bear": {
+    "name": "Grizzly bear Mod",
+    "id": 494751,
+    "fabric": {
+      "1.18.2": 3681784
+    }
+  },
+  "ftb-library-fabric": {
+    "name": "FTB Library (Fabric)",
+    "id": 438495,
+    "fabric": {
+      "1.18.2": 3794622
+    }
+  },
+  "inventory-hud-forge": {
+    "name": "Inventory HUD+",
+    "id": 357540,
+    "fabric": {
+      "1.18.1": 3545928
+    }
+  },
+  "createplus": {
+    "name": "CreatePlus",
+    "id": 623941,
+    "fabric": {
+      "1.18.2": 3793504
+    }
+  },
+  "mob-scarecrows": {
+    "name": "Mob Scarecrows",
+    "id": 560657,
+    "fabric": {
+      "1.18.2": 3696068
+    }
+  },
+  "gate-of-babylon": {
+    "name": "Gate of Babylon",
+    "id": 407500,
+    "fabric": {
+      "1.18.2": 3740903
+    }
+  },
+  "iron-jetpacks-fabric": {
+    "name": "Iron Jetpacks Fabric",
+    "id": 386892,
+    "fabric": {
+      "1.18.2": 3734921
+    }
+  },
+  "goblin-traders-fabric": {
+    "name": "Goblin Traders (Fabric)",
+    "id": 534373,
+    "fabric": {
+      "1.18.2": 3717825
+    }
+  },
+  "catwalks-inc": {
+    "name": "Catwalks Inc.",
+    "id": 554340,
+    "fabric": {
+      "1.18.2": 3670317
+    }
+  },
+  "farming-for-blockheads-fabric": {
+    "name": "Farming for Blockheads (Fabric Edition)",
+    "id": 554586,
+    "fabric": {
+      "1.18.2": 3684746
+    }
+  },
+  "floral-flair-fabric": {
+    "name": "🌷Floral Flair🌷",
+    "id": 549363,
+    "fabric": {
+      "1.18.2": 3724724
+    }
+  },
+  "redstone-bits": {
+    "name": "Redstone Bits",
+    "id": 321014,
+    "fabric": {
+      "1.18.2": 3806676
+    }
+  },
+  "terrablender-fabric": {
+    "name": "TerraBlender (Fabric)",
+    "id": 565956,
+    "fabric": {
+      "1.18.2": 3801032
+    }
+  },
+  "yungs-extras-fabric": {
+    "name": "YUNG's Extras (Fabric)",
+    "id": 590993,
+    "fabric": {
+      "1.18.2": 3777940
+    }
+  },
+  "caracal-mod": {
+    "name": "Caracal Mod (Fabric/Forge)",
+    "id": 486505,
+    "fabric": {
+      "1.18.2": 3724178
+    }
+  },
+  "extra-generators": {
+    "name": "Extra Generators",
+    "id": 475623,
+    "fabric": {
+      "1.18.2": 3770936
+    }
+  },
+  "go-fish": {
+    "name": "Go Fish",
+    "id": 431135,
+    "fabric": {
+      "1.18.2": 3740565
+    }
+  },
+  "ftb-quests-fabric": {
+    "name": "FTB Quests (Fabric)",
+    "id": 438496,
+    "fabric": {
+      "1.18.2": 3725770
+    }
+  },
+  "dark-enchanting": {
+    "name": "Dark Enchanting",
+    "id": 473553,
+    "fabric": {
+      "1.18.2": 3777836
+    }
+  },
+  "magitek-mechs": {
+    "name": "Magitek Mechs",
+    "id": 534029,
+    "fabric": {
+      "1.18.2": 3697655
+    }
+  },
+  "secret-rooms-fabric": {
+    "name": "Secret Rooms Fabric",
+    "id": 359248,
+    "fabric": {
+      "1.18.2": 3681186
+    }
+  },
+  "goodall": {
+    "name": "Goodall",
+    "id": 613215,
+    "fabric": {
+      "1.18.2": 3800471
+    }
+  },
+  "kibe": {
+    "name": "Kibe Utilities",
+    "id": 388832,
+    "fabric": {
+      "1.18.2": 3671408
+    }
+  },
+  "decorative-blocks": {
+    "name": "Decorative Blocks",
+    "id": 362528,
+    "fabric": {
+      "1.18.2": 3681918
+    }
+  },
+  "yungs-better-strongholds-fabric": {
+    "name": "YUNG's Better Strongholds (Fabric)",
+    "id": 480684,
+    "fabric": {
+      "1.18.2": 3778232
+    }
+  },
+  "guild": {
+    "name": "The Guild",
+    "id": 526011,
+    "fabric": {
+      "1.18.2": 3775957
+    }
+  },
+  "dustrial-decor-fabric": {
+    "name": "'Dustrial Decor [Fabric]",
+    "id": 592067,
+    "fabric": {
+      "1.18.1": 3695707
+    }
+  },
+  "wireless-networks": {
+    "name": "Wireless Networks",
+    "id": 461316,
+    "fabric": {
+      "1.18.2": 3759595
+    }
+  },
+  "auth-me": {
+    "name": "Auth Me",
+    "id": 356643,
+    "fabric": {
+      "1.18.2": 3764447
+    }
+  },
+  "enchancement": {
+    "name": "Enchancement",
+    "id": 598056,
+    "fabric": {
+      "1.18.2": 3796004
+    }
+  },
+  "campanion": {
+    "name": "Campanion",
+    "id": 373138,
+    "fabric": {
+      "1.18.1": 3770004
+    }
+  },
+  "probably-chests": {
+    "name": "Probably Chests",
+    "id": 601735,
+    "fabric": {
+      "1.18.2": 3785849
+    }
+  },
+  "eggtab-fabric": {
+    "name": "Egg Tab - Fabric",
+    "id": 360449,
+    "fabric": {
+      "1.18.1": 3711184
+    }
+  },
+  "farmers-delight-fabric": {
+    "name": "Farmer's Delight [Fabric]",
+    "id": 482834,
+    "fabric": {
+      "1.18.2": 3770564
+    }
+  },
+  "the-graveyard-fabric": {
+    "name": "The Graveyard (FABRIC)",
+    "id": 514468,
+    "fabric": {
+      "1.18.2": 3792651
+    }
+  },
+  "architects-palette-fabric": {
+    "name": "Architect's Palette [FABRIC]",
+    "id": 487364,
+    "fabric": {
+      "1.18.2": 3704046
+    }
+  },
+  "mo-structures": {
+    "name": "Mo' Structures (Fabric)",
+    "id": 378266,
+    "fabric": {
+      "1.18.2": 3779101
+    }
+  },
+  "yungs-bridges-fabric": {
+    "name": "YUNG's Bridges (Fabric)",
+    "id": 590988,
+    "fabric": {
+      "1.18.2": 3777946
+    }
+  },
+  "promenade": {
+    "name": "Promenade",
+    "id": 399648,
+    "fabric": {
+      "1.18.2": 3806650
+    }
+  },
+  "continuity": {
+    "name": "Continuity",
+    "id": 531351,
+    "fabric": {
+      "1.18.2": 3675822
+    }
+  },
+  "whisperwoods": {
+    "name": "Whisperwoods",
+    "id": 349597,
+    "fabric": {
+      "1.18.2": 3765424
+    }
+  },
+  "ftb-chunks-fabric": {
+    "name": "FTB Chunks (Fabric)",
+    "id": 472657,
+    "fabric": {
+      "1.18.2": 3787347
+    }
+  },
+  "appleskin": {
+    "name": "AppleSkin",
+    "id": 248787,
+    "fabric": {
+      "1.18.2": 3686478
+    }
+  },
+  "shulkerboxtooltip": {
+    "name": "ShulkerBoxTooltip",
+    "id": 315811,
+    "fabric": {
+      "1.18.2": 3790208
+    }
+  },
+  "macaws-windows": {
+    "name": "Macaw's Windows",
+    "id": 363569,
+    "fabric": {
+      "1.18.2": 3757609
+    }
+  },
+  "patchouli-fabric": {
+    "name": "Patchouli (Fabric)",
+    "id": 393236,
+    "fabric": {
+      "1.18.2": 3730975
+    }
+  },
+  "dawn": {
+    "name": "Dawn API",
+    "id": 399309,
+    "fabric": {
+      "1.18.2": 3805531
+    }
+  },
+  "extra-alchemy": {
+    "name": "Extra Alchemy",
+    "id": 247357,
+    "fabric": {
+      "1.18.2": 3767558
+    }
+  },
+  "macaws-doors": {
+    "name": "Macaw's Doors",
+    "id": 378646,
+    "fabric": {
+      "1.18.2": 3740800
+    }
+  },
+  "ecologics": {
+    "name": "Ecologics",
+    "id": 570463,
+    "fabric": {
+      "1.18.2": 3765565
+    }
+  },
+  "sodium": {
+    "name": "Sodium",
+    "id": 394468,
+    "fabric": {
+      "1.18.2": 3669187
+    }
+  },
+  "yungs-better-dungeons-fabric": {
+    "name": "YUNG's Better Dungeons (Fabric)",
+    "id": 525586,
+    "fabric": {
+      "1.18.2": 3777936
+    }
+  },
+  "irisshaders": {
+    "name": "Iris Shaders",
+    "id": 455508,
+    "fabric": {
+      "1.18.2": 3770305
+    }
+  },
+  "roughly-enough-items": {
+    "name": "Roughly Enough Items Fabric/Forge (REI)",
+    "id": 310111,
+    "fabric": {
+      "1.18.2": 3807859
+    }
+  },
+  "bosses-of-mass-destruction": {
+    "name": "Bosses of Mass Destruction",
+    "id": 438365,
+    "fabric": {
+      "1.18.2": 3793676
+    }
+  },
+  "cc-restitched": {
+    "name": "CC: Restitched",
+    "id": 462672,
+    "fabric": {
+      "1.18.2": 3806914
+    }
+  },
+  "croptopia-fabric": {
+    "name": "Croptopia [FABRIC/FORGE]",
+    "id": 415438,
+    "fabric": {
+      "1.18.2": 3805874
+    }
+  },
+  "charm": {
+    "name": "Charm",
+    "id": 318872,
+    "fabric": {
+      "1.18.2": 3764177
+    }
+  },
+  "geckolib": {
+    "name": "GeckoLib",
+    "id": 388172,
+    "fabric": {
+      "1.18.2": 3785982
+    }
+  },
+  "mythic-mounts": {
+    "name": "Mythic Mounts",
+    "id": 517650,
+    "fabric": {
+      "1.18.2": 3772875
+    }
+  },
+  "plushie-mod": {
+    "name": "Plushie Mod",
+    "id": 544197,
+    "fabric": {
+      "1.18.1": 3699524
+    }
+  },
+  "cloth-config": {
+    "name": "Cloth Config API (Fabric/Forge)",
+    "id": 348521,
+    "fabric": {
+      "1.18": 3782775
+    }
+  },
+  "modern-industrialization": {
+    "name": "Modern Industrialization",
+    "id": 405388,
+    "fabric": {
+      "1.18.2": 3775815
+    }
+  },
+  "additional-additions": {
+    "name": "Additional Additions | Fabric",
+    "id": 508556,
+    "fabric": {
+      "1.18.2": 3803402
+    }
+  },
+  "adorn": {
+    "name": "Adorn",
+    "id": 320215,
+    "fabric": {
+      "1.18.2": 3796954
+    }
+  },
+  "techreborn": {
+    "name": "Tech Reborn",
+    "id": 233564,
+    "fabric": {
+      "1.18.2": 3798505
+    }
+  },
+  "chimes": {
+    "name": "Chimes",
+    "id": 350464,
+    "fabric": {
+      "1.18.1": 3790371
+    }
+  },
+  "fabric-chisel": {
+    "name": "Chisel Refabricated",
+    "id": 551763,
+    "fabric": {
+      "1.18.1": 3695148
+    }
+  },
+  "repurposed-structures-fabric": {
+    "name": "Repurposed Structures (Fabric)",
+    "id": 391366,
+    "fabric": {
+      "1.18.2": 3803918
+    }
+  },
+  "adventurez": {
+    "name": "AdventureZ",
+    "id": 390991,
+    "fabric": {
+      "1.18.2": 3686504
+    }
+  },
+  "applied-energistics-2": {
+    "name": "Applied Energistics 2",
+    "id": 223794,
+    "fabric": {
+      "1.18.2": 3791295
+    }
+  },
+  "dark-utilities": {
+    "name": "Dark Utilities",
+    "id": 242195,
+    "fabric": {
+      "1.18.2": 3753812
+    }
+  },
+  "oh-the-biomes-youll-go-fabric": {
+    "name": "Oh The Biomes You'll Go Refabricated",
+    "id": 391378,
+    "fabric": {
+      "1.18.2": 3802793
+    }
+  },
+  "create-fabric": {
+    "name": "Create Fabric",
+    "id": 624165,
+    "fabric": {
+      "1.18.2": 3802017
+    }
+  },
+  "bewitchment": {
+    "name": "Bewitchment",
+    "id": 394915,
+    "fabric": {
+      "1.18.2": 3790211
+    }
+  },
+  "botania-fabric": {
+    "name": "Botania (Fabric)",
+    "id": 421839,
+    "fabric": {
+      "1.18.2": 3789681
+    }
+  },
+  "blockus": {
+    "name": "Blockus",
+    "id": 312289,
+    "fabric": {
+      "1.18.2": 3807049
+    }
+  },
+  "industrial-revolution": {
+    "name": "Industrial Revolution",
+    "id": 391708,
+    "fabric": {
+      "1.18.2": 3759591
+    }
+  },
+  "biome-makeover": {
+    "name": "Biome Makeover",
+    "id": 412182,
+    "fabric": {
+      "1.18.2": 3801962
+    }
+  },
+  "overloaded-armor-bar-fabric": {
+    "name": "Overloaded Armor Bar Fabric",
+    "id": 396300,
+    "fabric": {
+      "1.18.1": 3652537
+    }
+  },
+  "conjuring": {
+    "name": "Conjuring",
+    "id": 422310,
+    "fabric": {
+      "1.18.2": 3693350
+    }
+  },
+  "twigs": {
+    "name": "🪵 Twigs",
+    "id": 496913,
+    "fabric": {
+      "1.18.2": 3735923
+    }
+  },
+  "more-villagers-fabric": {
+    "name": "More Villagers [Fabric]",
+    "id": 486080,
+    "fabric": {
+      "1.18.2": 3699183
+    }
+  },
+  "spectrum": {
+    "name": "Spectrum",
+    "id": 556967,
+    "fabric": {
+      "1.18.2": 3761257
+    }
+  },
+  "pling": {
+    "name": "Pling",
+    "id": 365521,
+    "fabric": {
+      "1.18.1": 3550632
+    }
+  },
+  "macaws-fences-and-walls": {
+    "name": "Macaw's Fences and Walls",
+    "id": 453925,
+    "fabric": {
+      "1.18.2": 3755730
+    }
+  },
+  "can-you-trash-it": {
+    "name": "Can You Trash It?",
+    "id": 564152,
+    "fabric": {
+      "1.18.2": 3788274
+    }
+  },
+  "charmonium": {
+    "name": "Charmonium",
+    "id": 378696,
+    "fabric": {
+      "1.18.2": 3667869
+    }
+  },
+  "lib": {
+    "name": "Flytre Lib (FlytreLib)",
+    "id": 444498,
+    "fabric": {
+      "1.18.2": 3789249
+    }
+  },
+  "coxinha-utilities": {
+    "name": "Coxinha Utilities",
+    "id": 576449,
+    "fabric": {
+      "1.18.2": 3804386
+    }
+  },
+  "bookshelf": {
+    "name": "Bookshelf",
+    "id": 228525,
+    "fabric": {
+      "1.18.2": 3807717
+    }
+  },
+  "chalk-fabric": {
+    "name": "Chalk (Fabric)",
+    "id": 535541,
+    "fabric": {
+      "1.18.2": 3794897
+    }
+  },
+  "macaws-lights-and-lamps": {
+    "name": "Macaw's Lights and Lamps",
+    "id": 502372,
+    "fabric": {
+      "1.18.2": 3750059
+    }
+  },
+  "voidtotem-fabric": {
+    "name": "Void Totem (Fabric)",
+    "id": 456137,
+    "fabric": {
+      "1.18.2": 3686508
+    }
+  },
+  "displaycase": {
+    "name": "Display Case",
+    "id": 517791,
+    "fabric": {
+      "1.18.2": 3782656
+    }
+  },
+  "slight-gui-modifications": {
+    "name": "'Slight' Gui Modifications",
+    "id": 380393,
+    "fabric": {
+      "1.18.2": 3680329
+    }
+  },
+  "on-soul-fire": {
+    "name": "On Soul Fire",
+    "id": 394667,
+    "fabric": {
+      "1.18.2": 3782801
+    }
+  },
+  "boat-container": {
+    "name": "Boat Container",
+    "id": 526274,
+    "fabric": {
+      "1.18.2": 3783209
+    }
+  },
+  "more-totems-of-undying": {
+    "name": "More Totems Of Undying",
+    "id": 357265,
+    "fabric": {
+      "1.18.2": 3802634
+    }
+  },
+  "moreachievements-fabric": {
+    "name": "MoreAchievements [Fabric]",
+    "id": 560975,
+    "fabric": {
+      "1.18.2": 3667786
+    }
+  },
+  "enhanced-attack-indicator": {
+    "name": "Enhanced Attack Indicator",
+    "id": 446173,
+    "fabric": {
+      "1.18.1": 3728272
+    }
+  },
+  "fabric-extended-armor-bars-forked": {
+    "name": "[Fabric] Extended Armor Bars Forked",
+    "id": 567580,
+    "fabric": {
+      "1.18.2": 3683031
+    }
+  },
+  "steves-vanilla-fabric": {
+    "name": "Steve's Vanilla! [Fabric]",
+    "id": 594718,
+    "fabric": {
+      "1.18.2": 3790150
+    }
+  },
+  "cull-leaves": {
+    "name": "Cull Leaves",
+    "id": 423254,
+    "fabric": {
+      "1.18.1": 3509388
+    }
+  },
+  "midnightlib": {
+    "name": "MidnightLib",
+    "id": 488090,
+    "fabric": {
+      "1.18.1": 3657092
+    }
+  },
+  "spirit": {
+    "name": "Spirit",
+    "id": 495509,
+    "fabric": {
+      "1.18.2": 3803040
+    }
+  },
+  "voidz": {
+    "name": "VoidZ",
+    "id": 486971,
+    "fabric": {
+      "1.18.2": 3769825
+    }
+  },
+  "better-third-person": {
+    "name": "Better Third Person",
+    "id": 435044,
+    "fabric": {
+      "1.18.2": 3738178
+    }
+  },
+  "vein-mining-fabric": {
+    "name": "Vein Mining (Fabric)",
+    "id": 431910,
+    "fabric": {
+      "1.18.2": 3668335
+    }
+  },
+  "expanded-delight": {
+    "name": "Expanded Delight [Fabric]",
+    "id": 620770,
+    "fabric": {
+      "1.18.2": 3804761
+    }
+  },
+  "end-goblin-traders-fabric": {
+    "name": "End Goblin Traders (Fabric)",
+    "id": 537653,
+    "fabric": {
+      "1.18.2": 3755077
+    }
+  },
+  "delete-worlds-to-trash-fabric": {
+    "name": "Delete Worlds To Trash [Fabric]",
+    "id": 571086,
+    "fabric": {
+      "1.18.2": 3671245
+    }
+  },
+  "fabric-launchpads": {
+    "name": "[FABRIC] Launchpads",
+    "id": 521065,
+    "fabric": {
+      "1.18.2": 3673151
+    }
+  },
+  "fabric-seasons": {
+    "name": "Fabric Seasons",
+    "id": 413523,
+    "fabric": {
+      "1.18.2": 3779369
+    }
+  },
+  "zoomify": {
+    "name": "Zoomify",
+    "id": 574741,
+    "fabric": {
+      "1.18.2": 3800449
+    }
+  },
+  "overweight-farming": {
+    "name": "Overweight Farming",
+    "id": 591666,
+    "fabric": {
+      "1.18.2": 3753571
+    }
+  },
+  "more-babies": {
+    "name": "More Babies (Forge & Fabric) ",
+    "id": 590517,
+    "fabric": {
+      "1.18.1": 3772591
+    }
+  },
+  "comforts-fabric": {
+    "name": "Comforts (Fabric)",
+    "id": 433539,
+    "fabric": {
+      "1.18.2": 3682297
+    }
+  },
+  "pigsteel": {
+    "name": "Pigsteel [Fabric]",
+    "id": 448941,
+    "fabric": {
+      "1.18.2": 3667968
+    }
+  },
+  "oxidized": {
+    "name": "Oxidized",
+    "id": 506426,
+    "fabric": {
+      "1.18.2": 3780148
+    }
+  },
+  "more-axolotls": {
+    "name": "More Axolotls",
+    "id": 548608,
+    "fabric": {
+      "1.18": 3568753
+    }
+  },
+  "creatures-from-the-snow-fabric": {
+    "name": "Creatures From The Snow! [Fabric]",
+    "id": 576413,
+    "fabric": {
+      "1.18.2": 3784710
+    }
+  },
+  "blur-fabric": {
+    "name": "Blur (Fabric)",
+    "id": 393563,
+    "fabric": {
+      "1.18.1": 3548709
+    }
+  },
+  "easy-shulker-boxes-fabric": {
+    "name": "Easy Shulker Boxes [Fabric]",
+    "id": 596514,
+    "fabric": {
+      "1.18.2": 3718045
+    }
+  },
+  "chubby-stuff-fabric": {
+    "name": "Chubby Stuff! [Fabric]",
+    "id": 614985,
+    "fabric": {
+      "1.18.2": 3775329
+    }
+  },
+  "skin-layers-3d": {
+    "name": "Skin Layers 3D (Fabric/Forge)",
+    "id": 521480,
+    "fabric": {
+      "1.18.1": 3804600
+    }
+  },
+  "additional-bars-fabric": {
+    "name": "Additional Bars [FABRIC]",
+    "id": 431823,
+    "fabric": {
+      "1.18.2": 3693359
+    }
+  },
+  "wandering-collector": {
+    "name": "Wandering Collector",
+    "id": 443476,
+    "fabric": {
+      "1.18.2": 3717999
+    }
+  },
+  "universal-ores-fabric": {
+    "name": "Universal Ores (Fabric)",
+    "id": 489884,
+    "fabric": {
+      "1.18.1": 3575058
+    }
+  },
+  "entityculling": {
+    "name": "Entity Culling Fabric/Forge",
+    "id": 448233,
+    "fabric": {
+      "1.18.1": 3743933
+    }
+  },
+  "sprout": {
+    "name": "Sprout",
+    "id": 565856,
+    "fabric": {
+      "1.18.2": 3788678
+    }
+  },
+  "bclib": {
+    "name": "BCLib",
+    "id": 495191,
+    "fabric": {
+      "1.18.2": 3794044
+    }
+  },
+  "puzzle": {
+    "name": "Puzzle",
+    "id": 563977,
+    "fabric": {
+      "1.18.1": 3697550
+    }
+  },
+  "falling-tree": {
+    "name": "FallingTree (Forge&Fabric)",
+    "id": 349559,
+    "fabric": {
+      "1.18.2": 3777696
+    }
+  },
+  "polymorph-fabric": {
+    "name": "Polymorph (Fabric)",
+    "id": 397434,
+    "fabric": {
+      "1.18.2": 3793108
+    }
+  },
+  "vanilla-degus": {
+    "name": "Vanilla Degus",
+    "id": 463073,
+    "fabric": {
+      "1.18.2": 3686859
+    }
+  },
+  "biomeinfo-fabric": {
+    "name": "BiomeInfo (Fabric)",
+    "id": 328166,
+    "fabric": {
+      "1.18.2": 3670059
+    }
+  },
+  "post-materia": {
+    "name": "Post Materia",
+    "id": 609705,
+    "fabric": {
+      "1.18.2": 3745265
+    }
+  },
+  "not-enough-animations": {
+    "name": "Not Enough Animations",
+    "id": 433760,
+    "fabric": {
+      "1.18.1": 3739671
+    }
+  },
+  "friends-and-foes": {
+    "name": "Friends&Foes (Fabric)",
+    "id": 551364,
+    "fabric": {
+      "1.18.2": 3807311
+    }
+  },
+  "easy-magic-fabric": {
+    "name": "Easy Magic [Fabric]",
+    "id": 547471,
+    "fabric": {
+      "1.18.2": 3671351
+    }
+  },
+  "aphid-additions": {
+    "name": "Aphid Additions",
+    "id": 627488,
+    "fabric": {
+      "1.18.2": 3804327
+    }
+  },
+  "enchantment-lore": {
+    "name": "Enchantment Lore",
+    "id": 430219,
+    "fabric": {
+      "1.18.2": 3695090
+    }
+  },
+  "fabric-shield-lib": {
+    "name": "Fabric Shield Lib",
+    "id": 380649,
+    "fabric": {
+      "1.18.2": 3672635
+    }
+  },
+  "magnum-torch-fabric": {
+    "name": "Magnum Torch [Fabric]",
+    "id": 596517,
+    "fabric": {
+      "1.18.2": 3704691
+    }
+  },
+  "earth2java-fabric": {
+    "name": "Earth2Java",
+    "id": 398022,
+    "fabric": {
+      "1.18.2": 3682270
+    }
+  },
+  "villager-names-fabric": {
+    "name": "Villager Names (Fabric)",
+    "id": 416379,
+    "fabric": {
+      "1.18.2": 3765309
+    }
+  },
+  "creatures-from-the-warmths-fabric": {
+    "name": "Creatures From The Warmths! [Fabric]",
+    "id": 581486,
+    "fabric": {
+      "1.18.2": 3799187
+    }
+  },
+  "enhanced-celestials-fabric": {
+    "name": "Enhanced Celestials(Fabric) - Blood Moons & Harvest Moons",
+    "id": 443694,
+    "fabric": {
+      "1.18.2": 3785988
+    }
+  },
+  "roughly-enough-professions-rep": {
+    "name": "Roughly Enough Professions (REP)",
+    "id": 597988,
+    "fabric": {
+      "1.18.2": 3751401
+    }
+  },
+  "lambdynamiclights": {
+    "name": "LambDynamicLights",
+    "id": 393442,
+    "fabric": {
+      "1.18.1": 3541670
+    }
+  },
+  "xaeros-minimap": {
+    "name": "Xaero's Minimap",
+    "id": 263420,
+    "fabric": {
+      "1.18.2": 3798916
+    }
+  },
+  "betterf3": {
+    "name": "BetterF3",
+    "id": 401648,
+    "fabric": {
+      "1.18.2": 3798366
+    }
+  },
+  "xaeros-world-map": {
+    "name": "Xaero's World Map",
+    "id": 317780,
+    "fabric": {
+      "1.18.2": 3796748
+    }
+  },
+  "windchimes": {
+    "name": "Windchimes",
+    "id": 477895,
+    "fabric": {
+      "1.18.1": 3525353
+    }
+  },
+  "toms-storage-fabric": {
+    "name": "Tom's Simple Storage Mod (Fabric)",
+    "id": 396826,
+    "fabric": {
+      "1.18.2": 3782116
+    }
+  },
+  "immersive-weathering-fabric": {
+    "name": "Immersive Weathering [FABRIC]",
+    "id": 571035,
+    "fabric": {
+      "1.18.2": 3807698
+    }
+  },
+  "the-bumblezone-fabric": {
+    "name": "The Bumblezone (Fabric)",
+    "id": 363949,
+    "fabric": {
+      "1.18.2": 3790169
+    }
+  },
+  "trading-post-fabric": {
+    "name": "Trading Post [Fabric]",
+    "id": 547472,
+    "fabric": {
+      "1.18.2": 3671418
+    }
+  },
+  "chipped": {
+    "name": "Chipped",
+    "id": 456956,
+    "fabric": {
+      "1.18.2": 3748666
+    }
+  },
+  "quartz-elevator": {
+    "name": "Quartz Elevator",
+    "id": 442509,
+    "fabric": {
+      "1.18.1": 3670913
+    }
+  },
+  "falling-leaves-fabric": {
+    "name": "Falling Leaves (Fabric)",
+    "id": 417510,
+    "fabric": {
+      "1.18.2": 3782712
+    }
+  },
+  "cloth-config-legacy": {
+    "name": "Cloth Config API (UNUSED)",
+    "id": 319057,
+    "fabric": {
+      "1.18": 3641132
+    }
+  },
+  "basic-shields-fabric": {
+    "name": "Basic Shields [Fabric]",
+    "id": 538011,
+    "fabric": {
+      "1.18.2": 3708488
+    }
+  },
+  "paintings": {
+    "name": "Paintings ++",
+    "id": 252042,
+    "fabric": {
+      "1.18.2": 3788081
+    }
+  },
+  "crafttweaker": {
+    "name": "CraftTweaker",
+    "id": 239197,
+    "fabric": {
+      "1.18.2": 3807906
+    }
+  },
+  "betternether": {
+    "name": "BetterNether",
+    "id": 311377,
+    "fabric": {
+      "1.18.1": 3772085
+    }
+  },
+  "eden-ring": {
+    "name": "Eden Ring",
+    "id": 546590,
+    "fabric": {
+      "1.18.2": 3764686
+    }
+  },
+  "paradise-lost": {
+    "name": "Paradise Lost",
+    "id": 418680,
+    "fabric": {
+      "1.18.1": 3777051
+    }
+  },
+  "betterend": {
+    "name": "BetterEnd",
+    "id": 413596,
+    "fabric": {
+      "1.18.2": 3769273
+    }
+  },
+  "extended-drawers": {
+    "name": "Extended Drawers",
+    "id": 616602,
+    "fabric": {
+      "1.18.2": 3808108
+    }
+  },
+  "chat-heads": {
+    "name": "Chat Heads",
+    "id": 407206,
+    "fabric": {
+      "1.18.1": 3570678
+    }
+  },
+  "better-sodium-video-settings-button": {
+    "name": "Better Sodium Video Settings Button",
+    "id": 437443,
+    "fabric": {
+      "1.18.2": 3769487
+    }
+  },
+  "fabrictailor": {
+    "name": "FabricTailor",
+    "id": 390114,
+    "fabric": {
+      "1.18.2": 3782788
+    }
+  },
+  "clear-despawn-fabric": {
+    "name": "Clear Despawn [Fabric]",
+    "id": 308793,
+    "fabric": {
+      "1.18.1": 3682009
+    }
+  },
+  "item-filters": {
+    "name": "Item Filters",
+    "id": 309674,
+    "fabric": {
+      "1.18.2": 3787856
+    }
+  },
+  "fuel-info": {
+    "name": "FuelInfo",
+    "id": 489631,
+    "fabric": {
+      "1.18.1": 3537445
+    }
+  },
+  "paginated-advancements": {
+    "name": "Paginated Advancements",
+    "id": 618770,
+    "fabric": {
+      "1.18.1": 3771845
+    }
+  },
+  "nimble-fabric": {
+    "name": "Nimble (Fabric)",
+    "id": 545613,
+    "fabric": {
+      "1.18.1": 3725193
+    }
+  },
+  "detail-armor-bar": {
+    "name": "Detail Armor Bar [Fabric]",
+    "id": 506898,
+    "fabric": {
+      "1.18.2": 3668091
+    }
+  },
+  "disenchanter": {
+    "name": "Disenchanter",
+    "id": 542473,
+    "fabric": {
+      "1.18.2": 3763996
+    }
+  },
+  "war-hammers-forge-and-fabric": {
+    "name": "War Hammers",
+    "id": 432920,
+    "fabric": {
+      "1.18.2": 3695179
+    }
+  },
+  "extra-origins": {
+    "name": "Extra Origins",
+    "id": 398419,
+    "fabric": {
+      "1.18.2": 3755062
+    }
+  },
+  "origins-classes": {
+    "name": "Origins: Classes",
+    "id": 401833,
+    "fabric": {
+      "1.18.2": 3752361
+    }
+  },
+  "genesis-an-origins-addon": {
+    "name": "Genesis - An Origins Addon",
+    "id": 478902,
+    "fabric": {
+      "1.18.2": 3767473
+    }
+  },
+  "voyager": {
+    "name": "Voyager v2 - Custom Origin",
+    "id": 621280,
+    "fabric": {
+      "1.18.1": 3786360
+    }
+  },
+  "unforgiving-void": {
+    "name": "Unforgiving Void",
+    "id": 274863,
+    "fabric": {
+      "1.18.2": 3772208
+    }
+  },
+  "teenycoal": {
+    "name": "Teeny Coal",
+    "id": 510346,
+    "fabric": {
+      "1.18.1": 3667846
+    }
+  },
+  "nofog": {
+    "name": "NoFog",
+    "id": 296468,
+    "fabric": {
+      "1.18.2": 3737263
+    }
+  },
+  "impersonate": {
+    "name": "Impersonate",
+    "id": 360333,
+    "fabric": {
+      "1.18.2": 3751167
+    }
+  },
+  "fabric-enchantments": {
+    "name": "Fabric Enchantments",
+    "id": 498465,
+    "fabric": {
+      "1.18.2": 3723927
+    }
+  },
+  "explorers-compass": {
+    "name": "Explorer's Compass",
+    "id": 491794,
+    "fabric": {
+      "1.18.2": 3765362
+    }
+  },
+  "item-scroller": {
+    "name": "Item Scroller",
+    "id": 242064,
+    "fabric": {
+      "1.18.2": 3671377
+    }
+  },
+  "weaponthrowlite": {
+    "name": "Weapon Throw Lite",
+    "id": 527020,
+    "fabric": {
+      "1.18.2": 3784307
+    }
+  },
+  "spoorn-weapon-attributes": {
+    "name": "Spoorn Weapon Attributes",
+    "id": 573200,
+    "fabric": {
+      "1.18.1": 3752301
+    }
+  },
+  "mage-hand": {
+    "name": "Mage Hand",
+    "id": 567926,
+    "fabric": {
+      "1.18.2": 3790472
+    }
+  },
+  "this-rocks": {
+    "name": "This Rocks!",
+    "id": 416283,
+    "fabric": {
+      "1.18.2": 3747170
+    }
+  },
+  "alloy-forgery": {
+    "name": "Alloy Forgery",
+    "id": 438718,
+    "fabric": {
+      "1.18.2": 3758381
+    }
+  },
+  "origins-extra-keybinds": {
+    "name": "Origins Extra Keybinds",
+    "id": 474612,
+    "fabric": {
+      "1.18.1": 3795903
+    }
+  },
+  "totally-enough-pain": {
+    "name": "Totally Enough Pain",
+    "id": 541387,
+    "fabric": {
+      "1.18.2": 3807028
+    }
+  },
+  "skylib": {
+    "name": "SkyLib",
+    "id": 513100,
+    "fabric": {
+      "1.18.2": 3790470
+    }
+  },
+  "cosmetic-armor-fabric": {
+    "name": "Cosmetic Armor [FABRIC]",
+    "id": 436659,
+    "fabric": {
+      "1.18.1": 3772103
+    }
+  },
+  "just-enough-keys-fabric": {
+    "name": "Just Enough Keys [JEK] [Fabric]",
+    "id": 495059,
+    "fabric": {
+      "1.18.1": 3602969
+    }
+  },
+  "nomad-books": {
+    "name": "Nomad Books 📗",
+    "id": 356921,
+    "fabric": {
+      "1.18.2": 3793306
+    }
+  },
+  "dripsounds-fabric": {
+    "name": "Drip Sounds (Fabric)",
+    "id": 448311,
+    "fabric": {
+      "1.18.1": 3543360
+    }
+  },
+  "creeper-spores": {
+    "name": "Creeper Spores (For Fabric)",
+    "id": 331636,
+    "fabric": {
+      "1.18.2": 3672248
+    }
+  },
+  "tiny-skeletons-fabric": {
+    "name": "Tiny Skeletons [Fabric]",
+    "id": 548708,
+    "fabric": {
+      "1.18.2": 3727733
+    }
+  },
+  "tempad": {
+    "name": "Tempad",
+    "id": 514923,
+    "fabric": {
+      "1.18.2": 3806277
+    }
+  },
+  "clickthrough": {
+    "name": "ClickThrough",
+    "id": 405262,
+    "fabric": {
+      "1.18.2": 3687750
+    }
+  },
+  "not-enough-crashes": {
+    "name": "Not Enough Crashes (Fabric)",
+    "id": 353890,
+    "fabric": {
+      "1.18.2": 3758296
+    }
+  },
+  "fabric-furnaces": {
+    "name": "Fabric Furnaces",
+    "id": 315534,
+    "fabric": {
+      "1.18.2": 3712495
+    }
+  },
+  "mining-utility": {
+    "name": "Mining Utility",
+    "id": 478230,
+    "fabric": {
+      "1.18.1": 3666772
+    }
+  },
+  "tieredz": {
+    "name": "TieredZ",
+    "id": 615948,
+    "fabric": {
+      "1.18.2": 3786012
+    }
+  },
+  "wi-zoom": {
+    "name": "WI Zoom",
+    "id": 349630,
+    "fabric": {
+      "1.18.2": 3667476
+    }
+  },
+  "mmmmmmmmmmmm": {
+    "name": "MmmMmmMmmMmm (Target Dummy)",
+    "id": 225738,
+    "fabric": {
+      "1.18.1": 3642328
+    }
+  },
+  "firework-frenzy": {
+    "name": "Firework Frenzy",
+    "id": 520310,
+    "fabric": {
+      "1.18.2": 3668182
+    }
+  },
+  "wall-jump-unofficial-fabric": {
+    "name": "Wall-Jump! UNOFFICIAL [FABRIC]",
+    "id": 622370,
+    "fabric": {
+      "1.18.2": 3789551
+    }
+  },
+  "torohealth-damage-indicators": {
+    "name": "ToroHealth Damage Indicators",
+    "id": 245733,
+    "fabric": {
+      "1.18.1": 3556912
+    }
+  },
+  "artis-recrafted": {
+    "name": "Artis-Recrafted",
+    "id": 574404,
+    "fabric": {
+      "1.18.2": 3777451
+    }
+  },
+  "hover-pets": {
+    "name": "Hover Pets",
+    "id": 559380,
+    "fabric": {
+      "1.18.2": 3786184
+    }
+  },
+  "more-banner-features": {
+    "name": "More Banner Features",
+    "id": 515000,
+    "fabric": {
+      "1.18.1": 3570654
+    }
+  },
+  "give-me-hats": {
+    "name": "Give Me Hats! [FABRIC/FORGE]",
+    "id": 384009,
+    "fabric": {
+      "1.18.2": 3791432
+    }
+  },
+  "overlord": {
+    "name": "Overlord",
+    "id": 251732,
+    "fabric": {
+      "1.18.2": 3804147
+    }
+  },
+  "beenfo": {
+    "name": "Beenfo",
+    "id": 357256,
+    "fabric": {
+      "1.18.2": 3781828
+    }
+  },
+  "shetiphiancore-fabric": {
+    "name": "ShetiPhianCore [Fabric]",
+    "id": 536603,
+    "fabric": {
+      "1.18.2": 3765367
+    }
+  },
+  "largefluidtank-fabric": {
+    "name": "Large Fluid Tank for Fabric",
+    "id": 411564,
+    "fabric": {
+      "1.18.2": 3764565
+    }
+  },
+  "milk-plus": {
+    "name": "Milk Plus",
+    "id": 473632,
+    "fabric": {
+      "1.18.2": 3773319
+    }
+  },
+  "myloot": {
+    "name": "myLoot",
+    "id": 582459,
+    "fabric": {
+      "1.18.1": 3727940
+    }
+  },
+  "malilib": {
+    "name": "MaLiLib",
+    "id": 303119,
+    "fabric": {
+      "1.18.2": 3692220
+    }
+  },
+  "mining-dimensions-fabric": {
+    "name": "Mining Dimensions [FABRIC]",
+    "id": 442921,
+    "fabric": {
+      "1.18.2": 3771077
+    }
+  },
+  "rats-mischief": {
+    "name": "Rat's Mischief 🐀",
+    "id": 431787,
+    "fabric": {
+      "1.18.2": 3778759
+    }
+  },
+  "mcdar": {
+    "name": "MC Dungeons Artifacts",
+    "id": 476788,
+    "fabric": {
+      "1.18.1": 3777271
+    }
+  },
+  "megaparrot": {
+    "name": "MegaParrot",
+    "id": 561527,
+    "fabric": {
+      "1.18.2": 3790474
+    }
+  },
+  "gearreborn": {
+    "name": "Gear Reborn",
+    "id": 418539,
+    "fabric": {
+      "1.18.2": 3778641
+    }
+  },
+  "climb-ladders-fast": {
+    "name": "Climb Ladders Fast",
+    "id": 459522,
+    "fabric": {
+      "1.18.1": 3710457
+    }
+  },
+  "sodium-extra": {
+    "name": "Sodium Extra",
+    "id": 447673,
+    "fabric": {
+      "1.18.2": 3793985
+    }
+  },
+  "double-jump-mod": {
+    "name": "Double Jump Mod [Fabric]",
+    "id": 401683,
+    "fabric": {
+      "1.18.1": 3541792
+    }
+  },
+  "advancedreborn": {
+    "name": "Advanced Reborn",
+    "id": 543089,
+    "fabric": {
+      "1.18.2": 3773907
+    }
+  },
+  "mo-glass": {
+    "name": "Mo Glass",
+    "id": 353426,
+    "fabric": {
+      "1.18.2": 3667477
+    }
+  },
+  "besmirchment-2": {
+    "name": "Besmirchment 2",
+    "id": 542196,
+    "fabric": {
+      "1.18.2": 3709672
+    }
+  },
+  "market-crates": {
+    "name": "[Fabric/Forge] Market Crates 1.16/1.17/1.18",
+    "id": 443591,
+    "fabric": {
+      "1.18.1": 3564781
+    }
+  },
+  "basic-nether-ores": {
+    "name": "Basic Nether Ores [Forge/Fabric]",
+    "id": 289647,
+    "fabric": {
+      "1.18.2": 3679776
+    }
+  },
+  "lightest-lamps-fabric": {
+    "name": "Lightest Lamps (Fabric/Quilt)",
+    "id": 533661,
+    "fabric": {
+      "1.18.2": 3710888
+    }
+  },
+  "things-fabric": {
+    "name": "Things [Fabric]",
+    "id": 456151,
+    "fabric": {
+      "1.18.2": 3760631
+    }
+  },
+  "mine-pop": {
+    "name": "Mine-Pop!",
+    "id": 599276,
+    "fabric": {
+      "1.18.2": 3796516
+    }
+  },
+  "autorun-fabric": {
+    "name": "AutoRun (Fabric)",
+    "id": 279429,
+    "fabric": {
+      "1.18.1": 3595821
+    }
+  },
+  "veggieway-fabric": {
+    "name": "The Veggie Way [FABRIC]",
+    "id": 380345,
+    "fabric": {
+      "1.18.2": 3698682
+    }
+  },
+  "resource-tools-fabric": {
+    "name": "Resource Tools [FABRIC]",
+    "id": 379040,
+    "fabric": {
+      "1.18.2": 3698683
+    }
+  },
+  "exlines-awnings": {
+    "name": "Exline's Awnings - Now with Corners!",
+    "id": 526698,
+    "fabric": {
+      "1.18.1": 3797836
+    }
+  },
+  "platforms-fabric": {
+    "name": "Platforms [Fabric]",
+    "id": 536610,
+    "fabric": {
+      "1.18.2": 3765372
+    }
+  },
+  "tenshilib-fabric": {
+    "name": "TenshiLib (Fabric)",
+    "id": 552662,
+    "fabric": {
+      "1.18.2": 3764869
+    }
+  },
+  "half-doors": {
+    "name": "Halfdoors",
+    "id": 596375,
+    "fabric": {
+      "1.18.2": 3793358
+    }
+  },
+  "chest-tracker": {
+    "name": "Chest Tracker",
+    "id": 397217,
+    "fabric": {
+      "1.18.2": 3802721
+    }
+  },
+  "multibeds-fabric": {
+    "name": "MultiBeds [Fabric]",
+    "id": 536608,
+    "fabric": {
+      "1.18.2": 3749858
+    }
+  },
+  "gobber-fabric": {
+    "name": "Gobber [FABRIC]",
+    "id": 427177,
+    "fabric": {
+      "1.18.2": 3791292
+    }
+  },
+  "emotecraft": {
+    "name": "Emotecraft (Fabric)",
+    "id": 397809,
+    "fabric": {
+      "1.18.1": 3801764
+    }
+  },
+  "big-items-duh": {
+    "name": "Big Items, duh!",
+    "id": 444972,
+    "fabric": {
+      "1.18.2": 3718002
+    }
+  },
+  "rpgstats": {
+    "name": "RPGStats",
+    "id": 389800,
+    "fabric": {
+      "1.18.2": 3808156
+    }
+  },
+  "tacocraft-fabric": {
+    "name": "TacoCraft",
+    "id": 373093,
+    "fabric": {
+      "1.18.2": 3728163
+    }
+  },
+  "croparia": {
+    "name": "Croparia v3 [FORGE/FABRIC]",
+    "id": 250235,
+    "fabric": {
+      "1.18.2": 3689026
+    }
+  },
+  "creativecore": {
+    "name": "CreativeCore",
+    "id": 257814,
+    "fabric": {
+      "1.18.2": 3803832
+    }
+  },
+  "guardians-galore": {
+    "name": "Guardians Galore",
+    "id": 483073,
+    "fabric": {
+      "1.18.2": 3695866
+    }
+  },
+  "hookshot": {
+    "name": "Hookshot",
+    "id": 396512,
+    "fabric": {
+      "1.18.2": 3668184
+    }
+  },
+  "archon": {
+    "name": "Archon",
+    "id": 575339,
+    "fabric": {
+      "1.18.2": 3772197
+    }
+  },
+  "additional-enchanted-miner": {
+    "name": "Additional Enchanted Miner",
+    "id": 282837,
+    "fabric": {
+      "1.18.2": 3803328
+    }
+  },
+  "mcda": {
+    "name": "MC Dungeons Armors",
+    "id": 426206,
+    "fabric": {
+      "1.18.1": 3773061
+    }
+  },
+  "red-bits": {
+    "name": "Red Bits",
+    "id": 403914,
+    "fabric": {
+      "1.18.2": 3692322
+    }
+  },
+  "craftpresence": {
+    "name": "CraftPresence",
+    "id": 297038,
+    "fabric": {
+      "1.18.2": 3667807
+    }
+  },
+  "earthbounds": {
+    "name": "Earthbounds | Fabric | Includes Origin \"Rubian\"!",
+    "id": 574411,
+    "fabric": {
+      "1.18.2": 3794927
+    }
+  },
+  "createaddition": {
+    "name": "Create Crafts & Additions",
+    "id": 439890,
+    "fabric": {
+      "1.18.2": 3804888
+    }
+  },
+  "mythicmetals": {
+    "name": "Mythic Metals",
+    "id": 410127,
+    "fabric": {
+      "1.18.2": 3725977
+    }
+  },
+  "mcdw": {
+    "name": "MC Dungeons Weapons",
+    "id": 407311,
+    "fabric": {
+      "1.18.1": 3773032
+    }
+  },
+  "hyper-lighting-fabric": {
+    "name": "Hyper Lighting [Fabric]",
+    "id": 557692,
+    "fabric": {
+      "1.18.2": 3787306
+    }
+  },
+  "horsestatsvanilla": {
+    "name": "Horse Stats Vanilla (Fabric)",
+    "id": 351393,
+    "fabric": {
+      "1.18.1": 3551503
+    }
+  },
+  "illuminations": {
+    "name": "Illuminations 🔥",
+    "id": 292908,
+    "fabric": {
+      "1.18.2": 3791214
+    }
+  },
+  "sandwichable": {
+    "name": "Sandwichable",
+    "id": 374143,
+    "fabric": {
+      "1.18.2": 3761195
+    }
+  },
+  "eldritch-mobs": {
+    "name": "Eldritch Mobs",
+    "id": 392015,
+    "fabric": {
+      "1.18.2": 3708800
+    }
+  },
+  "carpet": {
+    "name": "Carpet",
+    "id": 349239,
+    "fabric": {
+      "1.18.2": 3725895
+    }
+  },
+  "winged": {
+    "name": "Winged",
+    "id": 381349,
+    "fabric": {
+      "1.18.2": 3671220
+    }
+  },
+  "travelers-backpack-fabric": {
+    "name": "Traveler's Backpack [FABRIC]",
+    "id": 541171,
+    "fabric": {
+      "1.18.2": 3805939
+    }
+  },
+  "magic-fungi": {
+    "name": "Magic Fungi",
+    "id": 506412,
+    "fabric": {
+      "1.18.2": 3793728
+    }
+  },
+  "spoornpacks": {
+    "name": "SpoornPacks",
+    "id": 577442,
+    "fabric": {
+      "1.18": 3742273
+    }
+  },
+  "inventory-profiles-next": {
+    "name": "Inventory Profiles Next",
+    "id": 495267,
+    "fabric": {
+      "1.18.2": 3800837
+    }
+  },
+  "exlines-furniture": {
+    "name": "Exline's Furniture Mod",
+    "id": 504919,
+    "fabric": {
+      "1.18.2": 3800655
+    }
+  },
+  "fireplace-lib": {
+    "name": "Fireplace Lib (Fabric)",
+    "id": 432845,
+    "fabric": {
+      "1.18.1": 3717646
+    }
+  },
+  "origins": {
+    "name": "Origins (Fabric)",
+    "id": 391943,
+    "fabric": {
+      "1.18.2": 3752286
+    }
+  },
+  "betteranimalsplus": {
+    "name": "Better Animals Plus",
+    "id": 303557,
+    "fabric": {
+      "1.18.2": 3680863
+    }
+  },
+  "phonos": {
+    "name": "Phonos",
+    "id": 417003,
+    "fabric": {
+      "1.18.2": 3726288
+    }
+  },
+  "grounded-origins-fabric": {
+    "name": "Mo's Grounded Origins [FABRIC]",
+    "id": 568199,
+    "fabric": {
+      "1.18.2": 3761214
+    }
+  },
+  "macaws-bridges-oh-the-biomes-youll-go": {
+    "name": "Macaw's Bridges - Oh The Biomes You'll Go",
+    "id": 535960,
+    "fabric": {
+      "1.18.2": 3783332
+    }
+  },
+  "mobz": {
+    "name": "MobZ",
+    "id": 336554,
+    "fabric": {
+      "1.18.1": 3637349
+    }
+  },
+  "valleycraft": {
+    "name": "ValleyCraft",
+    "id": 527942,
+    "fabric": {
+      "1.18.2": 3737716
+    }
+  },
+  "mcdoom": {
+    "name": "MCDoom",
+    "id": 368765,
+    "fabric": {
+      "1.18.2": 3804677
+    }
+  },
+  "presence-footsteps": {
+    "name": "Presence Footsteps [Fabric]",
+    "id": 334259,
+    "fabric": {
+      "1.18.2": 3671978
+    }
+  },
+  "moon-and-space-dimensions-fabric": {
+    "name": "Space Dimensions (Fabric)",
+    "id": 429841,
+    "fabric": {
+      "1.18.2": 3803930
+    }
+  },
+  "prefab-fabric": {
+    "name": "Prefab - Fabric",
+    "id": 438696,
+    "fabric": {
+      "1.18.2": 3782224
+    }
+  },
+  "lightstones": {
+    "name": "Lightstones",
+    "id": 368263,
+    "fabric": {
+      "1.18.2": 3802563
+    }
+  },
+  "consistencyplus": {
+    "name": "Consistency+",
+    "id": 430445,
+    "fabric": {
+      "1.18.2": 3761198
+    }
+  },
+  "dimensionaldoors": {
+    "name": "DimensionalDoors",
+    "id": 284876,
+    "fabric": {
+      "1.18.2": 3732839
+    }
+  }
+}
