@@ -34,12 +34,14 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v3
-      
+      with:
+        path: main
+        
     - name: Checkout resourcepack
       uses: actions/checkout@v3
       with:
         repository: Soochaehwa/Korean-Resource-Pack
-        path: ./Korean-Resource-Pack
+        path: Korean-Resource-Pack
         
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
