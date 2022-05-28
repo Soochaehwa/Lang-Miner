@@ -2,8 +2,8 @@ import log from "./utils/logger.js";
 import * as utils from "./utils/utils.js";
 import * as http from "./core/http.js";
 import * as indexing from "./core/indexing.js";
-import compareFileId from "./core/compare.js.js";
-import extract from "./core/extract.js.js";
+import compareFileId from "./core/compare.js";
+import extract from "./core/extract.js";
 import chalk from "chalk";
 import merge from "lodash.merge";
 
