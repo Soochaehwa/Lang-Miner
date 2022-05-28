@@ -34,13 +34,16 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v3
-      
+        
     - name: Checkout resourcepack
       uses: actions/checkout@v3
       with:
         repository: Soochaehwa/Korean-Resource-Pack
-        path: Lang-Miner
-        
+        path: Korean-Resource-Pack
+        token: ${{ secrets.PAT_TOKEN }}
+    
+    - run: ls -al
+    
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
@@ -54,3 +57,8 @@ jobs:
         API_KEY: ${{ secrets.API_KEY }}
     - run: npm ci
     - run: node index.js ${{ github.event.inputs.loader }} ${{ github.event.inputs.version }} ${{ github.event.inputs.target }}
+    
+    - name: Add & Commit
+      uses: EndBug/add-and-commit@v9.0.0
+      with:
+        cwd: './Korean-Resource-Pack/'
