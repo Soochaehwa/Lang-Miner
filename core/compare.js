@@ -17,7 +17,7 @@ export default function compareFileId(
   modVersion,
   fileId
 ) {
-  if (modIndex[slug]) {
+  if (modIndex[slug] && modIndex[slug][modLoader]) {
     const latestIndex = modIndex[slug][modLoader];
     const indexedVersions = Object.keys(latestIndex);
     const indexedVersionsLength = indexedVersions.length;

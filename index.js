@@ -38,7 +38,6 @@ async function main(modLoader, modVersion, target) {
       }
 
       const slug = Object.keys(info)[0];
-      // const projectId = info[slug].id;
       const fileId = Object.values(info[slug][modLoader]);
 
       if (noLangIndex.includes(slug)) {
