@@ -40,6 +40,7 @@ jobs:
       with:
         repository: Soochaehwa/Korean-Resource-Pack
         path: Korean-Resource-Pack
+        token: ${{ secrets.PAT_TOKEN }}
     
     - run: ls -al
     
