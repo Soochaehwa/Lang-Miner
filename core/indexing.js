@@ -4,6 +4,7 @@ import log from "../utils/logger.js";
 
 const __dirname = path.resolve();
 const fsPromises = fs.promises;
+const projectDir = "Korean-Resource-Pack";
 
 /**
  * 모드 인덱스를 업데이트 하는 함수
@@ -14,7 +15,10 @@ export function updateModIndex(index, fileName) {
   log.info(`${fileName} 인덱스 업데이트`);
 
   const indexJson = JSON.stringify(index, null, 2);
-  const indexJsonPath = path.join(__dirname, `${fileName}.json`);
+  const indexJsonPath = path.join(
+    `${__dirname}/${projectDir}`,
+    `${fileName}.json`
+  );
   fs.writeFile(indexJsonPath, indexJson, (err) => {
     if (err) {
       log.error(`${fileName}.json 저장 중 오류 발생: ${err}`);
@@ -28,8 +32,14 @@ export function updateModIndex(index, fileName) {
  */
 export async function getIndex(fileName) {
   try {
-    await fsPromises.access(`${fileName}.json`, fs.constants.F_OK);
-    const indexJson = fs.readFileSync(`./${fileName}.json`, "utf8");
+    await fsPromises.access(
+      `./${projectDir}/${fileName}.json`,
+      fs.constants.F_OK
+    );
+    const indexJson = fs.readFileSync(
+      `./${projectDir}/${fileName}.json`,
+      "utf8"
+    );
     const index = JSON.parse(indexJson);
     return index;
   } catch {
