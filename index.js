@@ -3,12 +3,18 @@ import AdmZip from "adm-zip";
 import path from "path";
 import Axios from "axios";
 import log from "./utils/logger.js";
+import { isEmpty } from "./utils/utils.js";
 import chalk from "chalk";
 import merge from "lodash.merge";
+import config from "./config.js";
 
 const __dirname = path.resolve();
 const fsPromises = fs.promises;
-const API = "https://api.curse.tools/v1/cf";
+const API = "https://api.curseforge.com/v1";
+const projectDir = "Korean-Resource-Pack";
+const headers = {
+  "x-api-key": config.API_KEY,
+};
 
 /**
  * URL을 받아 파일을 다운로드 하는 함수
@@ -21,6 +27,7 @@ async function download(url) {
       url,
       method: "GET",
       responseType: "arraybuffer",
+      headers,
     });
 
     return new Promise((resolve) => {
@@ -40,7 +47,10 @@ async function download(url) {
 async function getDownloadUrl(modId, fileId) {
   try {
     const response = await Axios.get(
-      `${API}/mods/${modId}/files/${fileId}/download-url`
+      `${API}/mods/${modId}/files/${fileId}/download-url`,
+      {
+        headers,
+      }
     );
     return new Promise((resolve) => {
       resolve(response.data.data);
@@ -77,7 +87,7 @@ function extract(buffer) {
       }
     }
 
-    const assetsPath = path.join(__dirname, "test");
+    const assetsPath = path.join(__dirname, projectDir);
 
     if (modId) {
       zip.extractEntryTo(
@@ -89,6 +99,7 @@ function extract(buffer) {
       log.info(`${chalk.hex("#FFA500")(modId)} 추출 완료`);
       return true;
     }
+    return false;
   } catch (error) {
     log.error(`추출 중 오류 발생: ${error}`);
   }
@@ -114,7 +125,9 @@ async function getModInfo(modLoader, modId, modVersion) {
 
     const version = modVersion;
 
-    const response = await Axios.get(`${API}/mods/${modId}`);
+    const response = await Axios.get(`${API}/mods/${modId}`, {
+      headers,
+    });
     const modInfo = response.data.data;
 
     const latestFiles = modInfo.latestFilesIndexes;
@@ -124,7 +137,7 @@ async function getModInfo(modLoader, modId, modVersion) {
     for (let i = 0; i < latestFilesLength; i++) {
       const latestFile = latestFiles[i];
       if (
-        latestFile.gameVersion.includes(version) &&
+        latestFile.gameVersion.startsWith(version) &&
         latestFile.modLoader === modLoader
       ) {
         const version = latestFile.gameVersion;
@@ -159,87 +172,140 @@ async function getModInfo(modLoader, modId, modVersion) {
   }
 }
 
+/**
+ * 인덱스 파일을 찾아서 읽어오는 함수
+ * @returns 파일이 있으면 모드 인덱스 객체 반환 없으면 false 반환
+ */
+async function getIndex(fileName) {
+  try {
+    await fsPromises.access(`${fileName}.json`, fs.constants.F_OK);
+    const indexJson = fs.readFileSync(`./${fileName}.json`, "utf8");
+    const index = JSON.parse(indexJson);
+    return index;
+  } catch {
+    return false;
+  }
+}
+
+/**
+ * 입력받은 모드를 인덱스랑 비교하여 최신버전인지 확인하는 함수
+ * @param {object} modIndex 모드 인덱스 객체
+ * @param {string} slug 모드 슬러그
+ * @param {string} modLoader 모드 로더
+ * @param {string} modVersion 모드 버전
+ * @param {string} fileId 모드 파일 ID
+ * @returns 최신 버전이면 true 반환
+ */
+function compareFileId(modIndex, slug, modLoader, modVersion, fileId) {
+  if (modIndex[slug]) {
+    const latestIndex = modIndex[slug][modLoader];
+    const indexedVersions = Object.keys(latestIndex);
+    const indexedVersionsLength = indexedVersions.length;
+
+    for (let i = 0; i < indexedVersionsLength; i++) {
+      const indexedVersion = indexedVersions[i];
+
+      if (indexedVersion.startsWith(modVersion)) {
+        const indexedLatestFileId = latestIndex[indexedVersion];
+
+        if (parseInt(fileId) === indexedLatestFileId) {
+          log.info(
+            `${chalk.hex("#FF0075")(slug)} 모드의 언어 파일은 최신 버전입니다.`
+          );
+          return new Promise((resolve) => {
+            resolve(true);
+          });
+        }
+      }
+    }
+  }
+}
+
+/**
+ * 모드 인덱스를 업데이트 하는 함수
+ * @param {object} index 인덱스 객체
+ * @param {string} fileName 저장할 json 파일 이름
+ */
+function updateModIndex(index, fileName) {
+  log.info(`${fileName} 인덱스 업데이트`);
+
+  const indexJson = JSON.stringify(index, null, 2);
+  const indexJsonPath = path.join(__dirname, `${fileName}.json`);
+  fs.writeFile(indexJsonPath, indexJson, (err) => {
+    if (err) {
+      log.error(`${fileName}.json 저장 중 오류 발생: ${err}`);
+    }
+  });
+}
+
 (async () => {
-  const manifest = await fsPromises.readFile("./manifest.json", "utf8");
+  const manifest = fs.readFileSync("./manifest.json", "utf8");
 
   const manifestJson = JSON.parse(manifest);
   const files = manifestJson.files;
-  const modLoader = "forge";
+  const modLoader = "fabric";
   const modVersion = "1.18";
 
   let index = {};
 
-  const Promises = files.map(async (file) => {
-    const info = await getModInfo(modLoader, file.projectID, modVersion);
+  let modIndex = await getIndex("ModIndex");
+  modIndex ? null : (modIndex = {});
+  let noLangIndex = await getIndex("NoLangModIndex");
+  noLangIndex ? null : (noLangIndex = []);
 
-    if (!info) {
-      return;
-    }
+  await Promise.all(
+    files.map(async (file) => {
+      const info = await getModInfo(modLoader, file.projectID, modVersion);
 
-    const slug = Object.keys(info)[0];
+      if (!info) {
+        return;
+      }
 
-    const modId = info[slug].id;
-    const fileId = Object.values(info[slug][modLoader]);
+      const slug = Object.keys(info)[0];
+      const modId = info[slug].id;
+      const fileId = Object.values(info[slug][modLoader]);
 
-    const downloadUrl = await getDownloadUrl(modId, fileId);
+      if (noLangIndex.includes(slug)) {
+        return log.info(
+          `${chalk.hex("#FFEF82")(slug)} 언어 파일이 없는 모드입니다.`
+        );
+      }
 
-    if (!downloadUrl.includes(".zip")) {
+      if (!isEmpty(modIndex)) {
+        const isExist = await compareFileId(
+          modIndex,
+          slug,
+          modLoader,
+          modVersion,
+          fileId
+        );
+        if (isExist) {
+          return;
+        }
+      }
+
+      const downloadUrl = await getDownloadUrl(modId, fileId);
       const downloadedMod = await download(downloadUrl);
       const modExtract = extract(downloadedMod);
-
       if (modExtract) {
         index = { ...index, ...info };
+      } else {
+        noLangIndex = [...noLangIndex, slug];
       }
-    }
-  });
+    })
+  );
 
-  await Promise.all(Promises);
-
-  const modJson = await fsPromises.readFile("./ModIndex.json", "utf8");
-  let modIndex = JSON.parse(modJson);
+  !isEmpty(noLangIndex) ? updateModIndex(noLangIndex, "NoLangModIndex") : null;
 
   modIndex = merge(modIndex, index);
-
-  const indexJson = JSON.stringify(modIndex, null, 2);
-  const indexJsonPath = path.join(__dirname, "ModIndex.json");
-  fs.writeFile(indexJsonPath, indexJson, (err) => {
-    if (err) {
-      log.error(`index.json 저장 중 오류 발생: ${err}`);
-    }
-  });
-
-  // files.forEach(async (file) => {
-  //   const info = await getModInfo(modLoader, file.projectID, modVersion);
-  //   const slug = Object.keys(info)[0];
-
-  //   const modId = info[slug].id;
-  //   const fileId = Object.values(info[slug][modLoader]);
-
-  //   const downloadUrl = await getDownloadUrl(modId, fileId);
-
-  //   if (!downloadUrl.includes(".zip")) {
-  //     const downloadedMod = await download(downloadUrl);
-  //     const modExtract = extract(downloadedMod);
-
-  //     if (modExtract) {
-  //       index = { ...index, ...info };
-  //       console.log(index);
-  //     }
-  //   }
-
-  //   // const downloadUrl = await getDownloadUrl(modInfo.Id, modInfo.[modLoader].[])
-
-  //   // console.log(file.projectID);
-
-  //   // console.log(modInfo);
-  //   //const downloadUrl = await getDownloadUrl(file.projectID, file.fileID);
-
-  //   //log.info(downloadUrl);
-
-  //   // if (!downloadUrl.includes(".zip")) {
-  //   //   const downloadedMod = await download(downloadUrl);
-
-  //   //   extract(downloadedMod);
-  //   // }
-  // });
+  !isEmpty(index) ? updateModIndex(modIndex, "ModIndex") : null;
 })();
+
+/*
+TODO:
+- 모드 인덱스랑 비교해서 버전이 바뀐 모드만 다운로드
+- manifest.json 파일을 주소로 받아서 분석
+- 모드팩 말고 단일 모드도 프로젝트 ID만 적으면 추가되게 하기
+- 패츌리 모드 언어 추출
+- 함수 모듈로 나누기
+*/

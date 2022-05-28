@@ -1,4 +1,7 @@
 /node_modules/
 /mods/
 /test/
+/Korean-Resource-Pack/
 /manifest.json
+/ModIndex.json
+config.js
