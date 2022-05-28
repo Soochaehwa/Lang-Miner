@@ -268,19 +268,14 @@ async function main(modLoader = "fabric", modVersion = "1.18", target) {
       projectIds = [...projectIds, file.projectID];
     });
   } else if (!isNaN(target)) {
-    projectIds = target;
+    projectIds = [target];
   } else {
     return log.error(`잘못된 타겟 인수입니다.`);
   }
 
   log.info(`모드 ${projectIds.length}개 추출을 시작합니다.`);
 
-  // const manifest = fs.readFileSync("./manifest.json", "utf8");
-  // const manifestJson = JSON.parse(manifest);
-  // const files = manifestJson.files;
-
   let index = {};
-
   let modIndex = await getIndex("ModIndex");
   modIndex ? null : (modIndex = {});
   let noLangIndex = await getIndex("NoLangModIndex");
