@@ -7,7 +7,7 @@ import extract from "./core/extract.js";
 import chalk from "chalk";
 import merge from "lodash.merge";
 
-async function main(modLoader = "fabric", modVersion = "1.18", target) {
+async function main(modLoader, modVersion, target) {
   const regex =
     /(http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?.json/;
 
@@ -79,6 +79,13 @@ async function main(modLoader = "fabric", modVersion = "1.18", target) {
   modIndex = merge(modIndex, index);
   !utils.isEmpty(index) ? indexing.updateModIndex(modIndex, "ModIndex") : null;
 }
+
+((arg) => {
+  if (arg.length === 0) {
+    return log.error(`인수가 없습니다.`);
+  }
+  main(arg[0], arg[1], arg[2]);
+})(process.argv.slice(2));
 
 /*
 TODO:
