@@ -17,7 +17,7 @@ on:
         type: choice
         options:
         - '1.18'
-      target:
+      projectId:
         required: true
         type: string
         
@@ -56,7 +56,7 @@ jobs:
       env:
         API_KEY: ${{ secrets.API_KEY }}
     - run: npm ci
-    - run: node index.js ${{ github.event.inputs.loader }} ${{ github.event.inputs.version }} ${{ github.event.inputs.target }}
+    - run: node index.js ${{ github.event.inputs.loader }} ${{ github.event.inputs.version }} ${{ github.event.inputs.projectId }}
     
     - name: Add & Commit
       uses: EndBug/add-and-commit@v9.0.0
