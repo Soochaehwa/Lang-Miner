@@ -13,7 +13,7 @@ const projectDir = "Korean-Resource-Pack";
  * @param {string} modVersion 모드 버전 (마이너 버전까지만 입력)
  * @returns 성공여부 반환
  */
-export default function extract(buffer, modLoader, modVersion) {
+export function lang(buffer, modLoader, modVersion) {
   try {
     const zip = new AdmZip(buffer);
     const zipEntries = zip.getEntries();
@@ -53,5 +53,27 @@ export default function extract(buffer, modLoader, modVersion) {
     return false;
   } catch (error) {
     log.error(`추출 중 오류 발생: ${error}`);
+  }
+}
+
+/**
+ * 모드팩 파일의 manifest.json의 project id를 배열로 반환하는 함수
+ * @param {arraybuffer} buffer 모드팩 파일의 arraybuffer
+ * @returns projectIds
+ */
+export function manifest(buffer) {
+  try {
+    const zip = new AdmZip(buffer);
+    const manifest = JSON.parse(zip.readAsText("manifest.json"));
+    const files = manifest.files;
+    let projectIds = [];
+
+    files.forEach((file) => {
+      projectIds = [...projectIds, file.projectID];
+    });
+
+    return projectIds;
+  } catch (error) {
+    log.error(`manifest 추출 중 오류 발생: ${error}`);
   }
 }

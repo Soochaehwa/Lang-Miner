@@ -2,23 +2,31 @@ import log from "./utils/logger.js";
 import * as utils from "./utils/utils.js";
 import * as http from "./core/http.js";
 import * as indexing from "./core/indexing.js";
+import * as extract from "./core/extract.js";
 import compareFileId from "./core/compare.js";
-import extract from "./core/extract.js";
 import chalk from "chalk";
 import merge from "lodash.merge";
 
-async function main(modLoader, modVersion, target) {
-  const regex =
-    /(http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?.json/;
+async function main(modLoader, modVersion, projectId) {
+  if (isNaN(projectId)) {
+    return log.error(`올바르지 않은 프로젝트ID: ${projectId}`);
+  }
 
+  const projectType = await http.checkProjectType(projectId);
   let projectIds = [];
 
-  if (regex.test(target)) {
-    projectIds = await http.getManifest(target);
-  } else if (!isNaN(target)) {
-    projectIds = [target];
+  if (projectType === "modpack") {
+    log.info("프로젝트의 형식은 모드팩입니다.");
+
+    const ModPackDownloadUrl = await http.getModPackDownloadUrl(projectId);
+    const downloadedModPack = await http.download(ModPackDownloadUrl);
+    projectIds = extract.manifest(downloadedModPack);
+  } else if (projectType === "mod") {
+    log.info("프로젝트의 형식은 모드입니다.");
+
+    projectIds = [projectId];
   } else {
-    return log.error(`잘못된 타겟 인수입니다.`);
+    return log.error(`추출할 수 없는 프로젝트 형식: ${projectType}`);
   }
 
   log.info(`모드 ${projectIds.length}개 추출을 시작합니다.`);
@@ -61,7 +69,7 @@ async function main(modLoader, modVersion, target) {
 
       const downloadUrl = await http.getDownloadUrl(projectId, fileId);
       const downloadedMod = await http.download(downloadUrl);
-      const modExtract = extract(downloadedMod, modLoader, modVersion);
+      const modExtract = extract.lang(downloadedMod, modLoader, modVersion);
       if (modExtract) {
         index = { ...index, ...info };
       } else {

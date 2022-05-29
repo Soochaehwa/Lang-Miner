@@ -31,9 +31,7 @@ export async function download(url) {
       responseType: "arraybuffer",
     });
 
-    return new Promise((resolve) => {
-      resolve(response.data);
-    });
+    return response.data;
   } catch (error) {
     log.error(`다운로드 중 오류 발생: ${error}`);
   }
@@ -53,9 +51,7 @@ export async function getDownloadUrl(projectId, fileId) {
         headers,
       }
     );
-    return new Promise((resolve) => {
-      resolve(response.data.data);
-    });
+    return response.data.data;
   } catch (error) {
     log.error(`다운로드 URL을 찾는 중 오류 발생: ${error}`);
   }
@@ -118,9 +114,7 @@ export async function getModInfo(modLoader, projectId, modVersion) {
             },
           },
         };
-        return new Promise((resolve) => {
-          resolve(info);
-        });
+        return info;
       }
     }
   } catch (error) {
@@ -129,18 +123,41 @@ export async function getModInfo(modLoader, projectId, modVersion) {
 }
 
 /**
- * manifest.json을 받아 projectId를 배열로 반환하는 함수
- * @param {string} target manifest 다운로드 url
- * @returns 배열로 변환된 projectId 반환
+ * 프로젝트가 모드인지 모드팩인지 확인하는 함수
+ * @param {number} projectId 프로젝트 ID
+ * @returns {string} 프로젝트 타입 반환
  */
-export async function getManifest(target) {
-  let projectIds = [];
-  const response = await Axios.get(target);
-  const files = response.data.files;
-  files.forEach((file) => {
-    projectIds = [...projectIds, file.projectID];
-  });
-  return new Promise((resolve) => {
-    resolve(projectIds);
-  });
+export async function checkProjectType(projectId) {
+  try {
+    const response = await Axios.get(`${API}/mods/${projectId}`, {
+      headers,
+    });
+    const projectType = response.data.data.classId;
+
+    if (projectType === 4471) {
+      return "modpack";
+    } else if (projectType === 6) {
+      return "mod";
+    } else {
+      return "unknown";
+    }
+  } catch (error) {
+    log.error(`존재하지 않는 프로젝트: ${error}`);
+  }
+}
+
+/**
+ * 최신버전의 모드팩 다운로드URL을 반환하는 함수
+ * @param {number} projectId 프로젝트 ID
+ * @returns 모드팩 다운로드URL 반환
+ */
+export async function getModPackDownloadUrl(projectId) {
+  try {
+    const response = await Axios.get(`${API}/mods/${projectId}/files`, {
+      headers,
+    });
+    return response.data.data[0].downloadUrl;
+  } catch (error) {
+    log.error(`다운로드 중 오류 발생: ${error}`);
+  }
 }
