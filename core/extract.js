@@ -78,11 +78,8 @@ export function manifest(buffer) {
     const zip = new AdmZip(buffer);
     const manifest = JSON.parse(zip.readAsText("manifest.json"));
     const files = manifest.files;
-    let projectIds = [];
 
-    files.forEach((file) => {
-      projectIds = [...projectIds, file.projectID];
-    });
+    const projectIds = files.map((files) => files.projectID);
 
     return projectIds;
   } catch (error) {

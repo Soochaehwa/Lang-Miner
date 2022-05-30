@@ -12,21 +12,29 @@ async function main(modLoader, modVersion, projectId) {
     return log.error(`올바르지 않은 프로젝트ID: ${projectId}`);
   }
 
-  const projectType = await http.checkProjectType(projectId);
   let projectIds = [];
 
-  if (projectType === "modpack") {
-    log.info("프로젝트의 형식은 모드팩입니다.");
-
-    const ModPackDownloadUrl = await http.getModPackDownloadUrl(projectId);
-    const downloadedModPack = await http.download(ModPackDownloadUrl);
-    projectIds = extract.manifest(downloadedModPack);
-  } else if (projectType === "mod") {
-    log.info("프로젝트의 형식은 모드입니다.");
-
-    projectIds = [projectId];
+  if (projectId === "0000") {
+    log.info("인덱싱된 모든 모드를 업데이트합니다.");
+    const modIndex = await indexing.getIndex("ModIndex");
+    const modIndexKeys = Object.values(modIndex);
+    projectIds = modIndexKeys.map((modIndexKey) => modIndexKey.id);
   } else {
-    return log.error(`추출할 수 없는 프로젝트 형식: ${projectType}`);
+    const projectType = await http.checkProjectType(projectId);
+
+    if (projectType === "modpack") {
+      log.info("프로젝트의 형식은 모드팩입니다.");
+
+      const ModPackDownloadUrl = await http.getModPackDownloadUrl(projectId);
+      const downloadedModPack = await http.download(ModPackDownloadUrl);
+      projectIds = extract.manifest(downloadedModPack);
+    } else if (projectType === "mod") {
+      log.info("프로젝트의 형식은 모드입니다.");
+
+      projectIds = [projectId];
+    } else {
+      return log.error(`추출할 수 없는 프로젝트 형식: ${projectType}`);
+    }
   }
 
   log.info(`모드 ${projectIds.length}개 추출을 시작합니다.`);
