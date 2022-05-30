@@ -42,16 +42,16 @@ export function lang(buffer, modLoader, modVersion) {
     );
 
     if (modId) {
-      const hasKor = zip.readAsText(`assets/${modId}/lang/ko_kr.json`);
+      // const hasKor = zip.readAsText(`assets/${modId}/lang/ko_kr.json`);
 
-      if (hasKor) {
-        zip.extractEntryTo(
-          `assets/${modId}/lang/ko_kr.json`,
-          `${assetsPath}`,
-          true,
-          true
-        );
-      }
+      // if (hasKor) {
+      //   zip.extractEntryTo(
+      //     `assets/${modId}/lang/ko_kr.json`,
+      //     `${assetsPath}`,
+      //     true,
+      //     true
+      //   );
+      // }
 
       zip.extractEntryTo(
         `assets/${modId}/lang/en_us.json`,
