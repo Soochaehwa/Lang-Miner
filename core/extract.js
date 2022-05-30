@@ -1,10 +1,11 @@
 import AdmZip from "adm-zip";
 import path from "path";
-import log from "../utils/logger.js";
 import chalk from "chalk";
+import log from "../utils/logger.js";
+import config from "../config.js";
 
 const __dirname = path.resolve();
-const projectDir = "Korean-Resource-Pack";
+const projectDir = config.PROJECT_DIR;
 
 /**
  * 다운받은 모드의 lang파일을 추출하는 함수

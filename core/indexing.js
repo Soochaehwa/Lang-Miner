@@ -1,10 +1,11 @@
 import fs from "fs";
 import path from "path";
 import log from "../utils/logger.js";
+import config from "../config.js";
 
 const __dirname = path.resolve();
 const fsPromises = fs.promises;
-const projectDir = "Korean-Resource-Pack";
+const projectDir = config.PROJECT_DIR;
 
 /**
  * 모드 인덱스를 업데이트 하는 함수
