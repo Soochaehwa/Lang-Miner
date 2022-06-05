@@ -2,6 +2,7 @@ import AdmZip from "adm-zip";
 import path from "path";
 import chalk from "chalk";
 import log from "../utils/logger.js";
+import noComment from "../utils/noComment.js";
 import config from "../config.js";
 import fs from "fs";
 
@@ -54,6 +55,7 @@ export function lang(buffer, modLoader, modVersion, isFirst) {
         const hasKor = zip.readAsText(`assets/${modId}/lang/ko_kr.json`);
 
         if (hasKor) {
+          log.info(`${modId} 한국어 파일 감지됨`);
           zip.extractEntryTo(
             `assets/${modId}/lang/ko_kr.json`,
             `${assetsPath}`,
@@ -61,6 +63,7 @@ export function lang(buffer, modLoader, modVersion, isFirst) {
             true
           );
         } else {
+          log.info(`${modId} 한국어 파일 생성`);
           const emptyKor = `{}`;
           const emptyKorPath = path.join(
             assetsPath,
@@ -73,6 +76,7 @@ export function lang(buffer, modLoader, modVersion, isFirst) {
         }
       }
 
+      noComment(path.join(assetsPath, "assets", modId, "lang"));
       log.info(`${chalk.hex("#FFA500")(modId)} 추출 완료`);
       return true;
     }

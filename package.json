@@ -12,6 +12,7 @@
     "axios-retry": "^3.2.5",
     "chalk": "^5.0.1",
     "dotenv": "^16.0.1",
-    "lodash.merge": "^4.6.2"
+    "lodash.merge": "^4.6.2",
+    "strip-json-comments": "^4.0.0"
   }
 }
