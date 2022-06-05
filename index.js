@@ -39,6 +39,7 @@ async function main(modLoader, modVersion, projectId) {
 
   log.info(`모드 ${projectIds.length}개 추출을 시작합니다.`);
 
+  let isFirst = true;
   let index = {};
   let modIndex = await indexing.getIndex("ModIndex");
   modIndex ? null : (modIndex = {});
@@ -72,12 +73,19 @@ async function main(modLoader, modVersion, projectId) {
         );
         if (isLatest) {
           return;
+        } else if (isLatest === false) {
+          isFirst = false;
         }
       }
 
       const downloadUrl = await http.getDownloadUrl(projectId, fileId);
       const downloadedMod = await http.download(downloadUrl);
-      const modExtract = extract.lang(downloadedMod, modLoader, modVersion);
+      const modExtract = extract.lang(
+        downloadedMod,
+        modLoader,
+        modVersion,
+        isFirst
+      );
       if (modExtract) {
         index = { ...index, ...info };
       } else {

@@ -3,6 +3,7 @@ import path from "path";
 import chalk from "chalk";
 import log from "../utils/logger.js";
 import config from "../config.js";
+import fs from "fs";
 
 const __dirname = path.resolve();
 const projectDir = config.PROJECT_DIR;
@@ -14,7 +15,7 @@ const projectDir = config.PROJECT_DIR;
  * @param {string} modVersion 모드 버전 (마이너 버전까지만 입력)
  * @returns 성공여부 반환
  */
-export function lang(buffer, modLoader, modVersion) {
+export function lang(buffer, modLoader, modVersion, isFirst) {
   try {
     const zip = new AdmZip(buffer);
     const zipEntries = zip.getEntries();
@@ -42,23 +43,36 @@ export function lang(buffer, modLoader, modVersion) {
     );
 
     if (modId) {
-      // const hasKor = zip.readAsText(`assets/${modId}/lang/ko_kr.json`);
-
-      // if (hasKor) {
-      //   zip.extractEntryTo(
-      //     `assets/${modId}/lang/ko_kr.json`,
-      //     `${assetsPath}`,
-      //     true,
-      //     true
-      //   );
-      // }
-
       zip.extractEntryTo(
         `assets/${modId}/lang/en_us.json`,
         `${assetsPath}`,
         true,
         true
       );
+
+      if (isFirst) {
+        const hasKor = zip.readAsText(`assets/${modId}/lang/ko_kr.json`);
+
+        if (hasKor) {
+          zip.extractEntryTo(
+            `assets/${modId}/lang/ko_kr.json`,
+            `${assetsPath}`,
+            true,
+            true
+          );
+        } else {
+          const emptyKor = `{}`;
+          const emptyKorPath = path.join(
+            assetsPath,
+            "assets",
+            modId,
+            "lang",
+            "ko_kr.json"
+          );
+          fs.writeFileSync(emptyKorPath, emptyKor);
+        }
+      }
+
       log.info(`${chalk.hex("#FFA500")(modId)} 추출 완료`);
       return true;
     }
