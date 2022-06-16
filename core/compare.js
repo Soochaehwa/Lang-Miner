@@ -38,5 +38,6 @@ export default function compareFileId(
         }
       }
     }
+    return false;
   }
 }
