@@ -10,7 +10,7 @@ export default function noComment(dir) {
       const jsonWithoutComments = JSON.parse(stripJsonComments(json));
       fs.writeFileSync(
         `${dir}/${lang}`,
-        JSON.stringify(jsonWithoutComments, null, 2)
+        JSON.stringify(jsonWithoutComments, null, 4)
       );
     });
   } catch (error) {
